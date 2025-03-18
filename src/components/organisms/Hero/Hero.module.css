@@ -10,7 +10,7 @@
   height: 100vh;
   width: 100vw;
   padding-top: 20vh;
-  background-image: url('../../../assets/hero/bg3.jpg');
+  background-image: url('../../../assets/hero/bg3.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 1220px) {
   .container {
-    background-image: url('../../../assets/hero/bg2.JPG');
+    background-image: url('../../../assets/hero/bg2.png');
   }
 
 }
