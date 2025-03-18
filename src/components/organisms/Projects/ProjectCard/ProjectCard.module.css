@@ -1,0 +1,151 @@
+@import "../../../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 16px 14px 0 #04152d;
+  padding: 18px 24px;
+  width: 79vw;
+  border-style: solid;
+  border-color: rgb(50, 61, 70);
+  border-width: 1px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.header {
+  align-items: end;
+}
+
+.header p {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  text-align: end;
+}
+.image {
+  margin-bottom: 26px;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  opacity: 0;
+  }
+
+.skill {
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 100px;
+  background:rgb(40,241,254);
+  padding: 2px 22px;
+  color: black;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 1px 22px;
+}
+
+
+.projectTitle {
+  align-items: center;
+  display: flex;
+  width: 30vw;
+  margin-top: -25px;
+}
+
+.date {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+
+.index {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+}
+
+.imageProfil {
+  width: 22vw;
+  height: 27vh;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 970px) {
+  .projectTitle {
+    width: 20vw;
+  }
+
+}
+@media screen and (max-width: 910px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+    box-shadow: 0 16px 14px 0 #04152d;
+    padding: 18px 24px;
+    width: 80vw;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .projectTitle {
+    align-items: center;
+    display: flex;
+    width: 75vw;
+    justify-content: center;
+    text-align: center;
+    margin-top: -25px;
+  }
+  
+  .imageProfil {
+    width: 70vw;
+    height: 22vh;
+  }
+
+}
+
+
+
+

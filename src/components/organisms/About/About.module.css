@@ -1,0 +1,146 @@
+@import "../../../vars.css";
+
+.container {
+  border-radius: 15px;
+  margin-top: 30vh;
+  z-index: 1;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  scale: 0;
+}
+
+.aboutImage {
+  width: 40vw;
+  min-width: 250px;
+  max-width: 60vh;
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 40px;
+  width: 40vw;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+}
+
+
+.aboutItemText {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  gap: 10px;
+}
+
+
+.aboutItem h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.aboutItem h1 {
+  font-size: 2.5vw;    
+  text-align: center;  
+}
+
+.aboutItem p {
+  font-size: 1.5vw
+}
+
+
+.containerMotion {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.itemMotion {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: inherit;
+  cursor: grabbing;
+  align-items: center;
+}
+
+.itemMotion:hover {
+  cursor: grab;
+}
+
+
+
+
+@media screen and (max-width: 830px) {
+
+  .title {
+    font-size: 30px;
+  }
+  .aboutItems {
+    width: 80vw;
+  }
+
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 20vh;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutItem p {
+    font-size: 15px
+  }
+
+  .aboutItem h1 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+    text-align: center;
+  }
+
+  .aboutItem{
+    padding:0;
+    }
+
+
+    .aboutItemText {
+      align-items:center;
+    }
+}

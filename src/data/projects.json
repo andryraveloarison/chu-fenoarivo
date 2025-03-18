@@ -1,0 +1,32 @@
+[
+  {
+    "index": "01",
+    "title": "Site Helpdesk",
+    "imageSrc": "projects/helpDesk.png",
+    "description": "Create a ticket and chat with our IT specialists to resolve your issue.",
+    "skills": ["React","Prisma", "NodeJs","Tailwind","Postgresql"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "date": "2023"
+  },
+  {
+    "index": "02",
+    "title": "Dominoes",
+    "imageSrc": "projects/daomy.png",
+    "description": "Play dominoes with your friends even when you don't have dominoes or are far apart.",
+    "skills": ["React", "Spring boot"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "date": "2024"
+  },
+  {
+    "index": "03",
+    "title": "Smart sales Insights",
+    "imageSrc": "projects/ssi.png",
+    "description": "Empower your sales with data-driven decisions",
+    "skills": ["React", "TypeScript", "Nest", "Postgresql","Flask"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com",
+    "date": "2024"
+  }
+]

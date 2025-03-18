@@ -1,0 +1,108 @@
+@import "../../../vars.css";
+
+.container {
+  margin-top: 20vh;
+  color: var(--color-text);
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer {
+  padding-top: 10rem;
+}
+.title {
+
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 30px;
+  padding: 0.3rem;
+}
+
+.text p {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-top: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  border-color: rgba(87, 87, 87, 0.377);
+  border-radius: 18px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    100deg,
+    rgba(3, 161, 214, 0.42) 10%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.link:hover  {
+  background-size: 100% 100%;
+
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size:medium;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 20vh;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text p {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+
+  .links {
+    align-items: center;
+  }
+}

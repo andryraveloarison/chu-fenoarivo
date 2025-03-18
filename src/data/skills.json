@@ -1,0 +1,47 @@
+[
+    {
+        "category":"front-end",
+        "title": "React Js",
+        "imageSrc": "skills/react.png"
+    },
+    {
+        "category":"front-end",
+        "title": "Tailwind",
+        "imageSrc": "skills/tailwind.png"
+    },
+    {
+        "category":"back-end",
+        "title": "Node",
+        "imageSrc": "skills/node.png"
+    },
+    {
+        "category":"back-end",
+        "title": "Nest",
+        "imageSrc": "skills/nest.png"
+    },
+    {
+        "category":"back-end",
+        "title": "Spring boot",
+        "imageSrc": "skills/spring.png"
+    },
+    {
+        "category":"back-end",
+        "title": "Postgreql",
+        "imageSrc": "skills/postgres.png"
+    },
+    {
+        "category":"other",
+        "title": "github",
+        "imageSrc": "skills/githubIcon.png"
+    },
+    {
+        "category":"other",
+        "title": "React native",
+        "imageSrc": "skills/react.png"
+    },
+    {
+        "category":"other",
+        "title": "TypeScript",
+        "imageSrc": "skills/ts.png"
+    }
+]

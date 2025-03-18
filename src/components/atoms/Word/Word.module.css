@@ -1,0 +1,12 @@
+
+@import "../../../vars.css";
+
+.word{
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  .shadow{
+    position: absolute;
+    opacity: 0.1;
+  }
