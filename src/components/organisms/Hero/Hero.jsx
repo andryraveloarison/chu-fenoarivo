@@ -29,7 +29,7 @@ export const Hero = () => {
         
         <li className={styles.link}>
                 {<img src={getImageUrl("hero/play.png")} alt="play icon" className={styles.image}/>}
-                <a href="" target="_blank">Hijery</a>
+                <a href="" target="_blank">Explorer</a>
         </li>
       </div> 
     </section>

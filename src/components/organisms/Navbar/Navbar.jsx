@@ -10,7 +10,7 @@ export const Navbar = () => {
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
         <img
-          src={getImageUrl("nav/rep.png")}
+          src={getImageUrl("nav/rep.jpg")}
           alt="republique logo"
           className={styles.heroImg}
         />

@@ -4,28 +4,28 @@ import { gsap, Power3 } from "gsap";
 export const animatePreloader = (ref1, ref2, ref3) => {
   setTimeout(() => {
     animateDev(ref1.current)
-  }, 300);
+  }, 400);
 
   setTimeout(() => {
     animateCreat(ref2.current)
-  }, 600);
+  },700);
 
   setTimeout(() => {
     animatePass(ref3.current)
-  }, 900);
+  }, 1000);
 
 
   setTimeout(() => {
     reAnimateDev(ref1.current)
-  }, 1800);
+  }, 1900);
 
   setTimeout(() => {
     reAnimateCreat(ref2.current)
-  }, 2000);
+  }, 2100);
 
   setTimeout(() => {
     reAnimatePass(ref3.current)
-  }, 2200);
+  }, 2300);
 
 
 }
