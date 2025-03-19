@@ -2,7 +2,7 @@
 
 .container {
   border-radius: 15px;
-  margin-top: 30vh;
+  margin-top: 15vh;
   z-index: 1;
 }
 
@@ -12,21 +12,64 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-align: center;
+
 }
+
+.nameDe{
+  text-align: end;
+}
+
+.black {
+  color: black;
+}
+
+.bgTitle {
+  background-image: url(/assets/hero/bg3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 28vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.contentHistory {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+
 
 .content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  margin-top: 15vh;
+  margin-top: 18vh;
   scale: 0;
+  background-color: var(--color-red);
+  margin: 10px;
+  border-radius: 25px;
+}
+
+
+.nameImg {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
 }
 
 .aboutImage {
   width: 40vw;
   min-width: 250px;
   max-width: 60vh;
+  padding: 20px;
 }
 
 .aboutItems {
@@ -116,6 +159,11 @@
   }
 
   .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contentHistory {
     flex-direction: column;
     text-align: center;
   }

@@ -4,7 +4,10 @@
   --color-primary: #576cbc;
   --color-secondary: #19376d;
   --color-dark: #0b2447;
-  --color-bg: #0f76b6;
+  --color-bg: #fff;
+  --color-blue: #0f76b6;
+  --color-green: #183b04;
+  --color-red:#a31a08;
 
   /* Fonts */
   --font-roboto: "Roboto";

@@ -1,28 +1,33 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../../utils";
+import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === "/" || location.pathname == "/home";
 
   return (
-    <nav className={styles.navbar}>
+          <nav className={`${styles.navbar} ${!isHome ? styles.scrolled : ""}`}>
+
       <a className={styles.title} href="/">
         <img
           src={getImageUrl("nav/rep.jpg")}
           alt="republique logo"
           className={styles.heroImg}
         />
-        <img
-          src={getImageUrl("nav/dgfs.png")}
-          alt="dgfs logo"
-          className={styles.heroImg}
-        />
+
         <img
         src={getImageUrl("nav/ministera.png")}
         alt="ministere logo"
         className={styles.heroImg}
+        />
+        <img
+          src={getImageUrl("nav/dgfs.png")}
+          alt="dgfs logo"
+          className={styles.heroImg}
         />
         <img
         src={getImageUrl("nav/chu.png")}
@@ -46,20 +51,24 @@ export const Navbar = () => {
           onClick={() => setMenuOpen(false)}
         >
            <li>
-            <a href="#projects">Accueil</a>
+            <Link to="/home">
+                <a href="" target="_blank">Accueil</a>
+            </Link>
           </li>
           <li>
-            <a href="#about" >À propos</a>
+            <Link to="/about">
+                <a href="" target="_blank">À propos</a>
+            </Link>
           </li>
           <li>
-            <a href="#experiences">Service</a>
-          </li>
+            <Link to="/service">
+                <a href="" target="_blank">Service</a>
+            </Link>
+          </li>         
           <li>
-            <a href="#skills">Actualite</a>
-          </li>
-         
-          <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">
+                <a href="" target="_blank">Contact</a>
+            </Link>
           </li>
         </ul>
       </div>

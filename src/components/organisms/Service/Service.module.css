@@ -1,0 +1,128 @@
+@import "../../../vars.css";
+
+.container {
+  border-radius: 15px;
+  margin-top: 15vh;
+  z-index: 1;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-align: center;
+}
+
+.bgTitle {
+  background-image: url(/assets/hero/bg3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 28vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Grille des services */
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Cartes */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  max-width: 400px;
+}
+
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.serviceItem {
+  transition: transform 0.2s ease-in-out; /* Ajout d'une transition fluide */
+}
+.cardTitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Service individuel */
+.serviceItem {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 300px;
+  width: 100%;
+}
+
+
+.image {
+  width: 100%; /* L'image prendra toute la largeur du parent */
+  height: auto; /* Maintient le ratio d'aspect */
+  object-fit: cover; /* S'assure que l'image couvre bien la zone disponible */
+  border-radius: 8px; /* Facultatif, pour des bords arrondis */
+}
+
+.serviceTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.servicePhone {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.serviceDescription {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.image {
+  width: 100%; /* Prend toute la largeur du parent */
+  height: 200px; /* Fixe une hauteur */
+  object-fit: cover; /* Ajuste l’image pour qu’elle couvre bien */
+  border-radius: 8px; /* Facultatif, pour arrondir */
+}
+
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+  .serviceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+}

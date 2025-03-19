@@ -49,6 +49,21 @@
 }
 
 
+.contentIntro {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18vh;
+  scale: 0;
+  background-color: var(--color-red);
+  margin: 10px;
+  border-radius: 25px;
+}
+
+
+
+
 .hello {
   margin-left: -22px;
   font-size: calc(1rem + 2vw); /* Utilisation de vw pour ajuster la taille du texte en fonction de la largeur de la fenêtre */
@@ -107,16 +122,42 @@
 
 
 .title {
-  font-size: calc(2rem + 2vw); /* Utilisation de vw pour ajuster la taille du texte en fonction de la largeur de la fenêtre */
-  font-weight: 900;
-  margin-bottom: 1rem;
-  font-family: var(--font-roboto);
-  background: linear-gradient(92.72deg, rgb(40,241,254) 0%, #765eed 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  opacity: 0;
+  color: black;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-align: center;
+  margin-top: 5vh;
 
 }
+
+.containerIntro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.intro{
+  color:  black;
+  padding: 15px;
+  margin: 25px;
+}
+
+.aboutItems {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 40px;
+  width: 80%;
+  border: var(--color-red);
+  border-width: 2px;
+  border-style: solid; 
+}
+
 
 .description {
   font-size: 2rem;
@@ -146,6 +187,9 @@
   width: 35%;
   z-index: 0;
   border-radius: 50%;
+  max-width: 0px;
+  max-width:250px;
+
 }
 
 .topBlur {
@@ -175,6 +219,67 @@
   filter: blur(100px);
   z-index: 0;
 }
+
+
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+
+}
+
+
+.aboutItemText {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  border-radius: 20px;
+  list-style: none;
+  padding: 25px;
+  gap: 10px;
+}
+
+
+.aboutItem h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+.aboutItem h1 {
+  font-size: 2.5vw;    
+  text-align: center;  
+}
+
+.aboutItem p {
+  font-size: 1.5vw
+}
+
+
+.containerMotion {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.itemMotion {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: inherit;
+  cursor: grabbing;
+  align-items: center;
+}
+
+.itemMotion:hover {
+  cursor: grab;
+}
+
 
 
 @media screen and (max-width: 1220px) {

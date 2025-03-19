@@ -1,56 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Contact.module.css";
-import { getImageUrl } from "../../../utils";
-import contacts from "../../../data/contacts.json";
-import { useRef } from "react";
-import Word from "../../atoms/Word/Word.jsx";
-import { useScroll } from "framer-motion";
-
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const title = "CONTACT ME "
-  const titleRef = useRef(null)
-  const {scrollYProgress} = useScroll({
-    target: titleRef,
-    offset:['start end','start 0.25']
-  })
+  const [status, setStatus] = useState("");
 
-  const words = title.split(" ")
+  const handleChange = () => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Envoi en cours...");
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
+    try {
+      await emailjs.send(
+        "ton_service_id", // Remplace par ton Service ID EmailJS
+        "ton_template_id", // Remplace par ton Template ID EmailJS
+        templateParams,
+        "ta_public_key" // Remplace par ta Public Key EmailJS
+      );
+
+      setStatus("Message envoyé avec succès !");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Erreur lors de l'envoi:", error);
+      setStatus("Erreur lors de l'envoi du message.");
+    }
+  };
+
   return (
-    <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
-        <h2 className={styles.title} ref={titleRef}> 
-          {
-            words.map((word,i)=>{
-              const start = i / words.length
-              return <Word key={i} range={[start, 1]} progress ={scrollYProgress}>{word}</Word>
-            })
-          }
-        </h2>
-        <p className={styles.contactText}>Feel free to contact me by email or through my social networks.</p>
-      </div>
-      <ul className={styles.links}>
-
-        {
-          contacts.map((contact, id) => {
-            return(
-              <li key={id} className={styles.link}>
-                <img src={getImageUrl(contact.imageSrc)} alt="Email icon" className={styles.image}/>
-                <a href={contact.source} target="_blank">{contact.name}</a>
-              </li>
-            )
-          })
-        }
-
-      </ul>
-
-      <div className={styles.footer}>
-        <p>Designed and build by Andry </p>
-        <p>©Copyright 2024 - Andry RAVELOARISON</p>
-      </div>
-    </footer>
+    <section className={styles.container}>
+      <h2 className={styles.title}>Contactez-nous</h2>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <input type="text" name="name" placeholder="Nom" value={formData.name} onChange={handleChange} required />
+        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
+        <textarea name="message" placeholder="Votre message" value={formData.message} onChange={handleChange} required />
+        <button type="submit">Envoyer</button>
+      </form>
+      {status && <p className={styles.status}>{status}</p>}
+    </section>
   );
 };

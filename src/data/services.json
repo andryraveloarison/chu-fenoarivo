@@ -1,0 +1,85 @@
+{
+  "hospitalisation": [
+    {      
+      "title": "Pneumo-phtisiologie",
+      "phone": "+261 34 14 200 52",
+      "description": "Service spécialisé dans le traitement des maladies respiratoires.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "title": "Cardiologie",
+      "phone": "+261 34 14 204 51",
+      "description": "Prise en charge des maladies du cœur et des vaisseaux.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "title": "Médecine générale",
+      "phone": "+261 34 14 200 55",
+      "description": "Consultations médicales générales et suivi des patients.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "title": "Médecine Payante",
+      "phone": "+261 34 14 200 45",
+      "descriptiabout/Andry.jpgon": "Consultations et soins médicaux payants.",
+      "image":"hero/bg1.jpg" 
+    }
+  ],
+  "paraclinique": [
+    {
+
+      "title": "Exploration Fonctionnelle Respiratoire",
+      "phone": "+261 34 14 200 52",
+      "description": "Examens pour évaluer la fonction respiratoire.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "titabout/Andry.jpgle": "Imagerie (Radiologie & échographie)",
+      "phone": "+261 34 14 193 25 / 034 14 200 46",
+      "descabout/Andry.jpgription": "Radiographie, échographie et autres examens d'imagerie.",
+      "image":"about/Andry.jpg" 
+ 
+    },
+    {
+
+      "title": "Laboratoire",
+      "phone": "+261 34 14 200 44",
+      "description": "Analyses biologiques et tests médicaux.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "title": "Unité de sommeil",
+      "phone": "+261 34 14 200 52",
+      "descriptiabout/Andry.jpgon": "Diagnostic et traitement des troubles du sommeil.",
+      "image":"hero/bg1.jpg"  
+    }
+  ],
+  "externes": [
+    {
+
+      "title": "ATO",
+      "phone": "+261 34 14 200 53",
+      "description": "Aide et soins aux patients externes.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "title": "Urgence-Réanimation",
+      "phone": "+261 34 14 200 53",
+      "description": "Urgences et premiers soins.",
+      "image":"about/Andry.jpg"  
+    },
+    {
+
+      "titabout/Andry.jpgle": "Pharmacie",
+      "phone": "+261 34 14 204 48",
+      "description": "Dispensation de médicaments et conseils pharmaceutiques.",
+      "image":"hero/bg1.jpg"  
+    }
+  ]
+}
