@@ -28,8 +28,8 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <div className={styles.App}>
+<Router basename="/">
+<div className={styles.App}>
 
 
         {/* Configuration des Routes */}
