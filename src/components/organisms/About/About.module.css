@@ -7,16 +7,21 @@
 }
 
 .title {
-  color: var(--color-text);
+  color: rgb(255, 255, 255);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-align: center;
-
+  background-color: var(--color-red);
+  opacity: 1;
+  padding: 8px 18px;
+  border-radius: 12px;
 }
 
 .nameDe{
   text-align: end;
+  width: 100%;
+
 }
 
 .black {
@@ -24,7 +29,8 @@
 }
 
 .bgTitle {
-  background-image: url(/assets/hero/bg3.png);
+  /*background-image: url(/assets/hero/bg3.png);*/
+  background-image: url(/assets/nav/about.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,10 +58,9 @@
   justify-content: center;
   align-items: center;
   margin-top: 18vh;
-  scale: 0;
   background-color: var(--color-red);
-  margin: 10px;
-  border-radius: 25px;
+  margin: 50px;
+  border-radius: 70px 0px 70px 0px; /* Haut gauche et bas droite */
 }
 
 
@@ -78,6 +83,14 @@
   flex-direction: column;
   margin-top: 20px;
   gap: 40px;
+}
+
+.aboutItemsHistory {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 40px;
   width: 40vw;
 }
 
@@ -87,7 +100,7 @@
   align-items: center;
   border-radius: 20px;
   list-style: none;
-  padding: 25px;
+  padding: 0px 25px 25px 25px;
 }
 
 
@@ -155,12 +168,15 @@
     background-color: transparent;
     padding-left: 0;
     padding-right: 0;
-    margin-top: 20vh;
+    margin-top: 12vh;
+    padding: 20px;
   }
 
   .content {
     flex-direction: column;
     text-align: center;
+    margin: 10px;
+
   }
 
   .contentHistory {

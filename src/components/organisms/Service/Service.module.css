@@ -8,15 +8,19 @@
 }
 
 .title {
-  color: var(--color-text);
+  color: white;
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-align: center;
+  background-color: var(--color-red);
+  opacity: 1;
+  padding: 8px 18px;
+  border-radius: 12px;
 }
 
 .bgTitle {
-  background-image: url(/assets/hero/bg3.png);
+  background-image: url(/assets/nav/hopital.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,18 +35,21 @@
 .serviceGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
   justify-items: center;
 }
 
 /* Cartes */
 .card {
+  gap: 12px;
   background: white;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
-  max-width: 400px;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -88,7 +95,6 @@
 .servicePhone {
   font-size: 1rem;
   color: #555;
-  font-style: italic;
 }
 
 .serviceDescription {
@@ -105,9 +111,21 @@
 
 
 /* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1074px) {
+
+  .card {
+    width: 30vw;
+  }
+}
+
+
 @media screen and (max-width: 1024px) {
   .serviceGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 40vw;
   }
 }
 
@@ -118,6 +136,10 @@
 
   .title {
     font-size: 30px;
+  }
+
+  .card {
+    width: 80vw;
   }
 }
 

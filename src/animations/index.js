@@ -1,31 +1,39 @@
 // animations.js
 import { gsap, Power3 } from "gsap";
 
-export const animatePreloader = (ref1, ref2, ref3) => {
+export const animatePreloader = (ref1, ref2, ref3, ref4) => {
   setTimeout(() => {
     animateDev(ref1.current)
-  }, 400);
+  }, 700);
 
   setTimeout(() => {
     animateCreat(ref2.current)
-  },700);
+  },1000);
 
   setTimeout(() => {
     animatePass(ref3.current)
-  }, 1000);
+  }, 1300);
+
+  setTimeout(() => {
+    animatePass(ref4.current)
+  }, 1600);
 
 
   setTimeout(() => {
     reAnimateDev(ref1.current)
-  }, 1900);
+  }, 2400);
 
   setTimeout(() => {
     reAnimateCreat(ref2.current)
-  }, 2100);
+  }, 2600);
 
   setTimeout(() => {
     reAnimatePass(ref3.current)
-  }, 2300);
+  }, 2800);
+
+  setTimeout(() => {
+    reAnimatePass(ref4.current)
+  }, 3000);
 
 
 }
@@ -61,6 +69,9 @@ export const animatePreloader = (ref1, ref2, ref3) => {
     duration: 1,
   });
 };
+
+
+
 
 
 
@@ -124,6 +135,6 @@ export const animateHero = (ref1, ref2,ref3,ref4)=> {
       duration: 1,
     });
 
-  }, 2900)
+  }, 3600)
 
 }

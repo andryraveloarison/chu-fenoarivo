@@ -8,7 +8,6 @@ function ContactPage() {
     <div className={styles.App}>
           <Navbar />
           <Contact />
-
     </div>
   );
 }

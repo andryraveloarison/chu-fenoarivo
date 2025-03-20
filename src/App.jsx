@@ -22,7 +22,7 @@ function App() {
           duration: 3,
           zIndex: -1,
         });
-      }, 2500);
+      }, 3300);
     };
     fakeDataFetch();
   }, []);

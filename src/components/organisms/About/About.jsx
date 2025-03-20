@@ -51,45 +51,85 @@ export const About = () => {
   return (
     <section className={styles.container} id="about">
       <div className={styles.bgTitle}>
-        <h2 className={styles.title} ref={titleRef}> 
-          {
-            words.map((word,i)=>{
-              const start = i / words.length
-              return <Word key={i} range={[start, 1]} progress ={scrollYProgress}>{word}</Word>
-            })
-          }
+        <h2 className={styles.title}> 
+          {title}
         </h2>
       </div>
 
+      <div className={styles.content} ref={imageRef}>
+
+
+    
+      <div>
+        <div className={styles.aboutItems}>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <motion.div 
+                initial={{ x: "-100%", opacity: 0 }} // Ajustez ici pour représenter -100% de la largeur du viewport
+                whileInView={{
+                  x: 0, opacity:1
+                }}
+                transition={{ duration: 0.2 }}   
+                      
+              >
+
+                <h1 className={styles.title}>Mots du Directeur d'Etablissement du CHU Fenoarivo</h1><br></br>
+              </motion.div>
+
+                <p>
+Chers visiteurs,<br></br><br></br>
+C'est avec un immense plaisir que je vous souhaite la bienvenue sur le site web du Centre Hospitalier Universitaire (CHU) Fenoarivo, Madagascar. <br></br><br></br>
+Aujourd'hui, nous faisons un pas important vers l'avenir en lançant notre plateforme en ligne, un espace dédié à l'information, à l'échange et à la transparence.<br></br>
+Le CHU Fenoarivo, situé dans la partie ouest d’Antananarivo, le Capital de Madagascar est l’un des 22 CHU dans tout Madagascar. Il est spécialisé dans le domaine de la pneumologie et la phtisiologie. Il s'engage à offrir des soins de qualité, centrés sur les patients « izay marary andrianina ». <br></br><br></br>
+Notre slogan, « ny anio mandresy ny omaly » traduit librement "Aujourd'hui meilleur qu'hier", reflète notre détermination à améliorer continuellement nos services et à humaniser chaque aspect de notre prise en charge. <br></br>
+Nous croyons fermement que chaque patient mérite une attention particulière et un accueil chaleureux, et nous sommes dans la voie de tout mettre en œuvre pour que cela soit une réalité.<br></br>
+Sur ce site, vous trouverez des informations sur nos services, nos équipes, ainsi que des ressources utiles pour vous accompagner dans votre parcours de soins et lors d’éventuelle hospitalisation de vos proches. Nous espérons que cet outil facilitera vos démarches et vous permettra de mieux connaître notre Etablissement.<br></br><br></br>
+Nous vous remercions de votre intérêt pour notre CHU. Nous sommes à votre disposition et accueillons vos propositions et remarques avec grand plaisir. Ensemble, nous pouvons bâtir un avenir meilleur pour la santé de notre communauté.<br></br>
+<br></br>
+Cordialement,
+
+                </p>
+                <br></br>
+                <div className={styles.nameDe}>
+                <p >
+                Dr Albert Sylla RATSIMAMANGA <br></br>
+                Directeur du CHU Fenoarivo, Madagascar                </p>
+                </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div className={styles.contentHistory} ref={imageRef}>
       
-        <div className={styles.contentHistory} ref={imageRef}>
-      
-            <img src={getImageUrl("about/chu.png")}
-                alt="Me sitting with a laptop"
-                className={styles.aboutImage}
-                style={{ pointerEvents: 'none' }} 
-                
-              />
-            <div>
-              <div className={styles.aboutItems}>
-                <div className={styles.aboutItem}>
-                  <div className={styles.aboutItemText}>
-                    <motion.div 
-                      initial={{ x: "200%", opacity: 0 }} // Ajustez ici pour représenter -100% de la largeur du viewport
-                      whileInView={{
-                        x: 0, opacity:1
-                      }}
-                      transition={{ duration: 0.2 }}   
-                            
-                    >
+      <img src={getImageUrl("about/chu.png")}
+          alt="Me sitting with a laptop"
+          className={styles.aboutImage}
+          style={{ pointerEvents: 'none' }} 
+          
+        />
+      <div>
+        <div className={styles.aboutItemsHistory}>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <motion.div 
+                initial={{ x: "200%", opacity: 0 }} // Ajustez ici pour représenter -100% de la largeur du viewport
+                whileInView={{
+                  x: 0, opacity:1
+                }}
+                transition={{ duration: 0.2 }}   
+                      
+              >
 
-                      <h1 className={styles.black}>Historique</h1>
-                      <br></br><br></br>
+                <h1 className={styles.black}>Historique</h1>
+                <br></br><br></br>
 
-                    </motion.div>
+              </motion.div>
 
-                      <p className={styles.black}>
-                      - 1903 : création d’un complexe hospitalier composé d’un dispensaire, d’une Maternité, d’un
+                <p className={styles.black}>
+                - 1903 : création d’un complexe hospitalier composé d’un dispensaire, d’une Maternité, d’un
 service d’hospitalisation, d’une pharmacie et d’une hospitalisation des malades mentaux
 (transférée à Anjanamasina en 1913)
 <br></br><br></br>
@@ -123,68 +163,15 @@ FENOARIVO
 <br></br><br></br>
 
 - 2015 jusqu’à maintenant : CHU FENOARIVO
-                      </p>
-                
-                      
-
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
-
-
-      <div className={styles.content} ref={imageRef}>
-      <div>
-      <img src={getImageUrl("about/Andry.jpg")}
-          alt="Me sitting with a laptop"
-          className={styles.aboutImage}
-          style={{ pointerEvents: 'none' }} 
+                </p>
           
-        />
+                
 
-        <p className={styles.nameImg}>Anaran'ilay zoky izao tokony eto</p>
-      </div>
-    
-      <div>
-        <div className={styles.aboutItems}>
-          <div className={styles.aboutItem}>
-            <div className={styles.aboutItemText}>
-              <motion.div 
-                initial={{ x: "-100%", opacity: 0 }} // Ajustez ici pour représenter -100% de la largeur du viewport
-                whileInView={{
-                  x: 0, opacity:1
-                }}
-                transition={{ duration: 0.2 }}   
-                      
-              >
-
-                <h1 >MOT DU DE</h1>
-              </motion.div>
-              <motion.div 
-                initial={{ x: "-100%", opacity: 0 }} // Ajustez ici pour représenter -100% de la largeur du viewport
-                whileInView={{
-                  x: 0, opacity:1
-                }}
-                transition={{ duration: 0.5 }}  
-      
-              >
-                <p>
-                    Having a first successful experience in the
-                    web development, I am currently open to all
-                    new opportunities in this area.
-                </p>
-                <br></br>
-                <p className={styles.nameDe}>
-                  Izao lasa eto
-                </p>
-              </motion.div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+</div>
     </section>
   );
 };

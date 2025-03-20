@@ -48,19 +48,19 @@ export const Hero = () => {
       <div className={styles.aboutItems}>
 
       <p className={styles.intro}>
-      Situé à 13 km d’Antananarivo sur la route nationale n°1 reliant Antananarivo -Tsiroanomandidy, dépanné par les centres de santé de base niveau II de Fenoarivo et d’Ambatomirahavavy pour les soins de premier degré, le CHU Fenoarivo dessert non seulement toute l’étendue de la région d’Analamanga, mais aussi une majeure partie des régions limitrophes, surtout dans le domaine de la Pneumo-phtisiologie. 
-      <br></br>      <br></br>
 
-      Outre les activités inhérentes à son existence, à laquelle l’hôpital a été toujours connu (ex-sanatorium), le centre hospitalier est devenu un centre de soins diversifiés et spécialisés, et également un centre de formation pour le personnel de santé (médical, paramédical), et même pour le personnel administratif exerçant dans le domaine de la santé.
-      <br></br>      <br></br>
+Situé à 13 km d’Antananarivo sur la route nationale n°1 reliant Antananarivo –Tsiroanomandidy, le Centre Hospitalier Universitaire Fenoarivo est situé à 18.93° de latitude sud et à 47.42° de longitude est.      <br></br>      <br></br>
 
-
-      Le CHU Fenoarivo est également un centre de consultation de troisième degré, offrant des services d’hospitalisation dans divers domaines, tels que la médecine générale, la cardiologie, la pneumo-phtisiologie, ainsi que des soins pour le CRPC et la TBMR. Il propose également des explorations médicales, telles que le radiodiagnostic, les analyses biologiques, les explorations fonctionnelles respiratoires, la fibroscopie bronchique, l’échographie et l’électrocardiographie.
-      <br></br>      <br></br>
+Le CHU Fenoarivo est un Etablissement Publique National à Caractère Administratif, parmi les 22 CHU de Madagascar et  les 12 d’Antananarivo      <br></br>      <br></br>
 
 
-      Le Centre Hospitalier Universitaire Fenoarivo dispose également d'un service d’acupuncture, d’ATO (Accueil, Triage, Orientation), ainsi que des services d’urgence et de réanimation.
-      </p>
+Il dessert une fraction de la population de la Région d’Analamanga et une majeure partie des régions limitrophes à l’ouest d’Antananarivo, surtout dans le domaine de la Pneumo-phtisiologie.      <br></br>      <br></br>
+
+
+Outre les activités inhérentes à son existence, à laquelle l’hôpital a été toujours connu (ex-sanatorium), le Centre Hospitalier est devenu un centre de soins diversifiés et spécialisés, et également un centre de formation pour le personnel de santé (médical et paramédical), et même pour le personnel administratif exerçant dans le domaine de la santé.<br></br> <br></br> 
+ C’est un centre de consultation et d’hospitalisation de référence de troisième niveau et offrant des services dans divers domaines, tels que la pneumo-phtisiologie, la cardiologie et la médecine général. Il inclut le Centre de Référence de Prise en Charge de la TuBerculose Multi-Résistante (CRPC TBMR). <br></br> <br></br> 
+Il propose des explorations médicales, telles que le radiodiagnostic, les analyses biologiques, les explorations fonctionnelles respiratoires, la fibroscopie bronchique, l’échographie / doppler et l’électrocardiographie.<br></br> <br></br> 
+Il dispose également d'une Pharmacie, d’un Service d’Accueil-Triage-Orientation  (ATO)  ainsi que des Services d’Urgence et de Réanimation.      </p>
       </div>
     </div>
     </>

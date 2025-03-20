@@ -1,0 +1,106 @@
+@import "../../../vars.css";
+
+
+.footer {
+    background-color: var(--color-footer-bg);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 200px;
+
+  }
+  
+  .heroImg {
+    width: 10%;
+    height: 10%;
+    z-index: 0;
+    border-radius: 50%;
+    min-width: 25px;
+    max-width: 90px;
+  
+  }
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+  .image {
+    width: 30px;
+  }
+  
+  .divfooter {
+    width: 100vw;
+    padding: 0 30px;
+
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .logoContainer img {
+    width: 60px;
+    margin: 0 10px;
+  }
+  
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 5px;
+
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+  .links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .links a:hover {
+    color: #f5a623;
+  }
+  
+  .contact p {
+    margin: 5px 0;
+  }
+  
+  .bottom {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+   
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .links {
+      flex-direction: row;
+      gap: 10px;
+
+  }
+
+  }
+  

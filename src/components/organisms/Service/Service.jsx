@@ -25,40 +25,20 @@ export const Service = () => {
 
   useEffect(() => {
 
-    gsap.to(imageRef.current,{
-      
-      scrollTrigger:{
-        trigger: imageRef.current,
-        start: "0% 400%",
-        scrub:true,
-        toggleActions: "restart pause reverse pause",
-        opacity: 1,
-        duration: 0.5,
-        scale:1,
-      },
-      opacity: 1,
-      duration: 0.5,
-      scale:1,
 
-    })
 
 
   })
   return (
     <section className={styles.container} id="services">
       <div className={styles.bgTitle}>
-        <h2 className={styles.title} ref={titleRef}>
-          {
-              words.map((word,i)=>{
-                const start = i / words.length
-                return <Word key={i} range={[start, 1]} progress ={scrollYProgress}>{word}</Word>
-              })
-            }        
+        <h2 className={styles.title}>
+         {title}
             </h2>
       </div>
 
       <div className={styles.serviceGrid} ref={containerRef}>
-        <ServiceCategory title="Services d’hospitalisation" services={servicesData.hospitalisation} />
+        <ServiceCategory title="Services de cliniques" services={servicesData.cliniques} />
         <ServiceCategory title="Services paracliniques" services={servicesData.paraclinique} />
         <ServiceCategory title="Services externes" services={servicesData.externes} />
       </div>
@@ -74,7 +54,6 @@ const ServiceCategory = ({ title, services }) => (
         <img src={getImageUrl(service.image)} alt={service.title} className={styles.image} />
         <h4 className={styles.serviceTitle}>{service.title}</h4>
         <p className={styles.servicePhone}>📞 {service.phone}</p>
-        <p className={styles.serviceDescription}>{service.description}</p>
       </div>
     ))}
   </div>

@@ -1,18 +1,18 @@
 [
     {
-        "name":"andryraveloarison01@gmail.com",
-        "imageSrc": "contact/emailIcon.png",
-        "source": "mailto:contact@andryraveloarison01.com"
+        "name":"email",
+        "imageSrc": "contact/email.png",
+        "source": "mailto:contact@chufenoarivo@gmail.com"
     },
     {
         "name":"Linkedin",
-        "imageSrc": "contact/linkedinIcon.png",
-        "source": "https://www.linkedin.com/in/andry-raveloarison-9aba3325a/"
+        "imageSrc": "contact/linkedin.png",
+        "source": "https://www.facebook.com/profile.php?id=61555702822896&_rdc=1&_rdr"
     },
     {
-        "name":"Github",
-        "imageSrc": "contact/githubIcon.png",
-        "source": "https://github.com/andryraveloarison"
+        "name":"Facebook",
+        "imageSrc": "contact/fb.png",
+        "source": "https://www.linkedin.com/company/chufenoarivo/?originalSubdomain=mg"
     }
   ]
   

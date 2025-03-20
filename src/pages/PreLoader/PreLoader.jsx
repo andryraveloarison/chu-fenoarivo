@@ -6,9 +6,10 @@ const PreLoader = () => {
   const devRef = useRef(null);
   const creatRef = useRef(null);
   const passRef = useRef(null);
+  const fenoRef = useRef(null)
 
   useEffect(() => {
-    animatePreloader(devRef,creatRef,passRef)
+    animatePreloader(devRef,creatRef,passRef, fenoRef)
   }, []);
 
   return (
@@ -17,6 +18,8 @@ const PreLoader = () => {
         <span className={styles.span} ref={devRef}>Centre</span>
         <span className={styles.span} ref={creatRef}>Hospitalier</span>
         <span className={styles.span} ref={passRef}>Universitaire</span>
+        <span className={styles.span} ref={fenoRef}>Fenoarivo</span>
+
       </div>
     </div> 
   );

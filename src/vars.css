@@ -5,9 +5,11 @@
   --color-secondary: #19376d;
   --color-dark: #0b2447;
   --color-bg: #fff;
-  --color-blue: #0f76b6;
+  --color-blue: #1485b9;
   --color-green: #183b04;
-  --color-red:#a31a08;
+  --color-red:#b92e1c;
+  --color-footer-bg: #045885; /* Bleu foncé */
+
 
   /* Fonts */
   --font-roboto: "Roboto";
