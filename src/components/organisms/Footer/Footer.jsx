@@ -26,7 +26,7 @@ const Footer = () => {
         <ul className={styles.links}>
           <li><Link to="/home">Accueil</Link></li>
           <li><Link to="/about">À propos</Link></li>
-          <li><Link to="/service">Service</Link></li>         
+          <li><Link to="/service">Services</Link></li>         
           <li><Link to="/contact">Contact</Link></li>
         </ul>
 
