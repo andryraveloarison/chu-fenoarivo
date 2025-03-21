@@ -1,5 +1,6 @@
 @import "./vars.css";
 @import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import "leaflet/dist/leaflet.css";
 
 .App {
   background-color: var(--color-bg);
