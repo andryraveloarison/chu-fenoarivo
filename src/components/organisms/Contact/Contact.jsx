@@ -3,6 +3,16 @@ import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet"; // Import pour gérer les icônes personnalisées
+import logoIcon from "../../../../assets/contact/location.png"; // Remplace par le chemin réel de ton logo
+
+// Définition de l'icône personnalisée
+const customIcon = L.icon({
+  iconUrl: logoIcon, // Image du logo
+  iconSize: [50, 50], // Taille de l'icône
+  iconAnchor: [25, 50], // Ancrage au centre bas
+  popupAnchor: [0, -50], // Position du popup au-dessus du logo
+});
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -46,35 +56,58 @@ export const Contact = () => {
   return (
     <section className={styles.container}>
       <div className={styles.contact}>
-      <h2 className={styles.title}>Contactez-nous</h2>
-      
-      {/* Formulaire de contact */}
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <input type="text" name="name" placeholder="Nom" value={formData.name} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
-        <textarea name="message" placeholder="Votre message" value={formData.message} onChange={handleChange} required />
-        <button type="submit">Envoyer</button>
-      </form>
-      {status && <p className={styles.status}>{status}</p>}
-      </div>
-      
+        <h2 className={styles.title}>Contactez-nous</h2>
 
- 
+        {/* Formulaire de contact */}
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Nom"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Votre message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit">Envoyer</button>
+        </form>
+        {status && <p className={styles.status}>{status}</p>}
+      </div>
+
       {/* Carte avec React Leaflet */}
       <div className={styles.mapContainer}>
-        <MapContainer center={[-18.93, 47.42]} zoom={13} scrollWheelZoom={false} className={styles.map}>
+        <MapContainer
+          center={[-18.93, 47.42]}
+          zoom={13}
+          scrollWheelZoom={false}
+          className={styles.map}
+        >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
-          <Marker position={[-18.93, 47.42]}>
+          {/* Marqueur avec logo personnalisé */}
+          <Marker position={[-18.93, 47.42]} icon={customIcon}>
             <Popup>
               Nous sommes ici ! <br /> Venez nous rendre visite.
             </Popup>
           </Marker>
         </MapContainer>
       </div>
-
     </section>
   );
 };

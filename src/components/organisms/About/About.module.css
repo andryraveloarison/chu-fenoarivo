@@ -38,6 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
 }
 
 
@@ -204,7 +205,13 @@
     }
 
 
-    .aboutItemText {
+  .aboutItemText {
       align-items:center;
     }
+
+  .bgTitle {
+    min-height: 200px;
+  }
+
+
 }
