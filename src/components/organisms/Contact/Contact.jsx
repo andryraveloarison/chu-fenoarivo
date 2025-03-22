@@ -3,21 +3,22 @@ import styles from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet"; // Import pour gérer les icônes personnalisées
-import logoIcon from "../../../../assets/contact/location.png"; // Remplace par le chemin réel de ton logo
+import L from "leaflet";
+import logoIcon from "../../../../assets/contact/location.png"; // Chemin réel du logo
 
 // Définition de l'icône personnalisée
 const customIcon = L.icon({
-  iconUrl: logoIcon, // Image du logo
-  iconSize: [50, 50], // Taille de l'icône
-  iconAnchor: [25, 50], // Ancrage au centre bas
-  popupAnchor: [0, -50], // Position du popup au-dessus du logo
+  iconUrl: logoIcon,
+  iconSize: [50, 50],
+  iconAnchor: [25, 50],
+  popupAnchor: [0, -50],
 });
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   });
 
@@ -33,20 +34,21 @@ export const Contact = () => {
 
     const templateParams = {
       from_name: formData.name,
-      from_email: formData.email,
-      message: formData.message,
+      subject: formData.subject, // Objet saisi par l'utilisateur
+      message: `De: ${formData.name} (${formData.email})\n\n${formData.message}`,
+      reply_to: formData.email, // Permet au destinataire de répondre
     };
 
     try {
       await emailjs.send(
-        "ton_service_id", // Remplace par ton Service ID EmailJS
-        "ton_template_id", // Remplace par ton Template ID EmailJS
+        "service_durh03v", // Remplace par ton Service ID EmailJS
+        "template_vr7yppv", // Remplace par ton Template ID EmailJS
         templateParams,
-        "ta_public_key" // Remplace par ta Public Key EmailJS
+        "u5qDuo7dWQb1qhEe9" // Remplace par ta Public Key EmailJS
       );
 
       setStatus("Message envoyé avec succès !");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error("Erreur lors de l'envoi:", error);
       setStatus("Erreur lors de l'envoi du message.");
@@ -73,6 +75,14 @@ export const Contact = () => {
             name="email"
             placeholder="Email"
             value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Objet"
+            value={formData.subject}
             onChange={handleChange}
             required
           />

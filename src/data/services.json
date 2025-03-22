@@ -3,21 +3,35 @@
     {      
       "title": "Pneumo-phtisiologie",
       "phone": "+261 34 14 200 52",
-      "description": "Service spécialisé dans le traitement des maladies respiratoires.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 52<br></br>Horaire de consultation: 08h30 - 16h00<br></br><b>CAPACITÉ</b><br></br>Pavillon Pneu-phtisiologie : 20 lits<br></br>Pavillon Centre de Référence et de Prise en Charge TBMR : 12 lits<br></br><b>OFFRES DE SERVICE</b><br></br>Hospitalisation<br></br>Consultation externe<br></br>Echographie thoracique (portable pour examen des patients au lit)<br></br>",
       "image":"services/Pneumo-phisio.jpg"  
+    },
+    {
+
+      "title": "ATO",
+      "phone": "+261 34 14 200 53",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 53<br></br>Horaire: 08h30 - 16h00, 5j/7<br></br><b>OFFRES DE SERVICE</b><br></br>Réception<br></br>Enregistrement<br></br>Triage<br></br>Orientation<br></br>",
+      "image":"services/ATO.jpg"  
+    },
+    {
+
+      "title": "Urgence-Réanimation",
+      "phone": "+261 34 14 200 53",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 53<br></br>Horaire: ouvert 24h/24 et 7j/7<br></br><b>CAPACITÉ</b><br></br>Salle 1: 08 lits<br></br>Salle 2: 04 lits (pour les accidentés)<br></br><b>OFFRES DE SERVICE</b><br></br>Consultation d'urgence et hospitalisation<br></br>Consultation Accidenté<br></br>Réanimation<br></br>Echographie<br></br>",
+      "image":"services/Urgence réanimation.jpg"  
     },
     {
 
       "title": "Cardiologie",
       "phone": "+261 34 14 204 51",
-      "description": "Prise en charge des maladies du cœur et des vaisseaux.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 204 51<br></br>Horaire de consultation: 08h30 - 15H30 (Flexible en fonction du nombre de patients présents sur place)<br></br><b>CAPACITÉ</b><br></br>Pavillon cardiologie: 12 lits<br></br><b>OFFRES DE SERVICE</b><br></br>Consultation externe<br></br>Visite hospitalière<br></br>ECG (Électrocardiogramme)<br></br>Soins et visites paramédicales<br></br>",
       "image":"services/Cardio.jpg"  
     },
     {
 
       "title": "Médecine générale",
       "phone": "+261 34 14 200 55",
-      "description": "Consultations médicales générales et suivi des patients.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 55<br></br>Horaire de consultation: 08h30 - 15H30 (Flexible en fonction du nombre de patients présents sur place)<br></br><b>CAPACITÉ</b><br></br>Pavillon médecine générale 1: 28 lits<br></br>Pavillon médecine générale 2: 14 lits<br></br><b>OFFRES DE SERVICE</b><br></br>Consultation externe<br></br>Visite hospitalière<br></br>Traitement de l'hémorragie digestive<br></br>Traitement de la fièvre typhoïde<br></br>Traitement du paludisme<br></br>Traitement de la gastro-entérite<br></br>Soins et visites paramédicales<br></br>",
       "image":"services/medecinege.jpg"  
     }
   ],
@@ -26,14 +40,14 @@
 
       "title": "Exploration ",
       "phone": "+261 34 14 200 52",
-      "description": "Fonctionnelle Respiratoire",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 52<br></br>Horaire de consultation: 08h30 - 16h00<br></br><b>OFFRES DE SERVICE</b><br></br>Fibro - bronchique<br></br>EFR (Exploration Fonctionnelle Respiratoire)<br></br>",
       "image":"services/Exploration.jpg"  
     },
     {
 
       "title": "Imagerie",
       "phone": "+261 34 14 193 25 / 034 14 200 46",
-      "descabout/Andry.jpgription": "Radiographie, échographie et autres examens d'imagerie.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 52<br></br>Horaire d’ouverture: 08h30 - 15h30, 5j/7<br></br><b>CAPACITÉ DE CONSULTATION QUOTIDIENNE</b><br></br>Echographie: 24 consultations<br></br>Radiographie: 32 consultations<br></br><b>OFFRES DE SERVICE</b><br></br>Echographie (grossesse, pelvienne, abdominale, thoracique, cervicale, ophtalmologique, partie molle)<br></br>Echocardiographie DOPPLER<br></br>Echo DOPPLER de vaisseaux<br></br>Radiographie (coeur - poumon, os, crâne, abdomen sans préparation)<br></br>",
       "image":"services/Imagerie.jpg" 
  
     },
@@ -41,38 +55,33 @@
 
       "title": "Laboratoire",
       "phone": "+261 34 14 200 44",
-      "description": "Analyses biologiques et tests médicaux.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 44<br></br>Horaire d’ouverture: 07h30 - 15h30, 5j/7<br></br>Horaire de réception des prélèvements (sang, urines, selles): 08h00 - 09h00<br></br>Horaire de réception des résultats d’analyses: à partir de 13h00<br></br><b>OFFRES DE SERVICE</b><br></br>Prélèvements (sang, urines, selles)<br></br>Réalisation des analyses de biologie médicale<br></br><b>BILANS DISPONIBLES</b><br></br><table border='1'><tr><th>Hématologie</th><td>HÉMOGRAMME/NFS, TAUX DE RÉTICULOCYTES, VSH, TQ/TP/INR, TCA, TEST D’EMMEL, TEST D’ITANO</td></tr><tr><th>Parasitologie</th><td>EXAMEN PARASITOLOGIQUE DES URINES, SELLES KAOP X3, GE/FM</td></tr><tr><th>Immunologie</th><td>AgHbs (hépatite B), ASLO, RPR ou VDRL, TPHA, FACTEUR RHUMATOIDE</td></tr><tr><th>Biochimie</th><td>IONOGRAMME SANGUIN (Na+, Cl-, K+), Bandelettes urinaires à 10 paramètres, Bandelettes urinaires à 3 paramètres, Protéinurie de 24H, CRP, Créatinémie, Azotémie ou Urée, Uricémie ou Acide urique, Fer Sérique, Calcémie, Phosphorémie, Magnésemie, Glycémie à jeûn, Cholestérol total, Cholestérol HDL, Cholestérol LDL, Triglycéridémie, Bilirubinémie Total, Bilirubinémie Direct, Gamma GT, ASAT/GOT (Transaminases), ALAT(Transaminases), Protidémie/Protéines totales, Albumine, Dosage des protéines dans Liquide de ponction (Ascite, pleural), Phosphatase alcaline</td></tr></table>",
       "image":"services/Labo.jpg"  
     },
     {
 
       "title": "Unité de sommeil",
       "phone": "+261 34 14 200 52",
-      "description/Andry.jpgon": "Diagnostic et traitement des troubles du sommeil.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 52<br></br>Horaire de consultation: 08h30 - 16h00<br></br><b>OFFRES DE SERVICE</b><br></br>Polygraphie ventilatoire<br></br>Oxymétrie nocturne",
       "image":"services/Unité de sommeil.jpg"  
     }
   ],
   "externes": [
-    {
 
-      "title": "ATO",
-      "phone": "+261 34 14 200 53",
-      "description": "Aide et soins aux patients externes.",
-      "image":"services/ATO.jpg"  
-    },
-    {
 
-      "title": "Urgence-Réanimation",
-      "phone": "+261 34 14 200 53",
-      "description": "<b>ACCUEIL</b> <br></br>Contact: +261 34 14 200 53<br></br>Horaire: ouvert 24 h/24 h et 7 jours/7<br></br>Capacité: 04 lits<br></br><b>OFFRES DE SERVICE</b><br></br>Soins, réanimation<br></br><b>MEMBRES DU PERSONNEL</b><br></br>Médecins : Docteur RANDRIA<br></br>Urgentistes : Docteur Rakoto,Docteur Rabe<br></br>",
-      "image":"services/Urgence réanimation.jpg"  
-    },
     {
 
       "title": "Pharmacie",
       "phone": "+261 34 14 204 48",
-      "description": "Dispensation de médicaments et conseils pharmaceutiques.",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 204 48<br></br>Horaire d’ouverture: ouvert 24h/24, 7j/7<br></br><b>OFFRES DE SERVICE</b><br></br>Ventes de médicaments et de consommables médicaux",
       "image":"services/Pharmacie.jpg"  
+    },
+    {
+
+      "title": "Aumônerie",
+      "phone": "+261 33 18 411 83",
+      "description": "<b>ACCUEIL</b> <br></br>Contact: 033 18 411 83<br></br>Lundi - vendredi: disponible sur rendez-vous<br></br><b>CULTE DU DIMANCHE</b><br></br>Catholique: 06h30 - 8h00<br></br>Protestant: 09h00 - 11h30",
+      "image":"services/Aumônerie.jpg"  
     },
     {
 

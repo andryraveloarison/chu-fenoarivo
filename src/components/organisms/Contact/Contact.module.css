@@ -8,12 +8,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-
-    /* Pour centrer verticalement et horizontalement */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin-top: 22vh;
 }
 
 .contact {
@@ -57,7 +52,7 @@ textarea {
 }
 
 button {
-  background-color: var(--color-red);
+  background-color: var(--color-secondary);
   color: white;
   border: none;
   padding: 10px;
@@ -79,7 +74,7 @@ button:hover {
 /* Responsive */
 @media (max-width: 768px) {
   .container {
-    margin: 30vh auto;
+    margin: 20vh auto;
 
     flex-direction: column;
   }

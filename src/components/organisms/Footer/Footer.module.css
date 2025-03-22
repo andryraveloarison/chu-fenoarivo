@@ -34,6 +34,11 @@
   .image {
     width: 30px;
   }
+
+  .imagebig {
+    width: 130px;
+    margin-bottom: 10px;
+  }
   
   .divfooter {
     width: 100vw;
@@ -67,6 +72,7 @@
     align-items: center;
     border-radius: 10px;
     gap: 10px;
+    cursor: pointer;
   }
 
   .links a {
@@ -87,6 +93,43 @@
     font-size: 12px;
     margin-top: 12px;
   }
+
+  /* Style pour la popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popupContent {
+  background-color:#010a16;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.closeBtn {
+  background-color: #3c6d1e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.closeBtn:hover {
+  background-color: #3f0505;
+}
+
    
   /* Responsive */
   @media (max-width: 768px) {

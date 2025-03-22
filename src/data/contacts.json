@@ -7,12 +7,17 @@
     {
         "name":"Linkedin",
         "imageSrc": "contact/linkedin.png",
-        "source": "https://www.facebook.com/profile.php?id=61555702822896&_rdc=1&_rdr"
+        "source": "https://www.linkedin.com/company/chufenoarivo/?originalSubdomain=mg "
     },
     {
         "name":"Facebook",
         "imageSrc": "contact/fb.png",
-        "source": "https://www.linkedin.com/company/chufenoarivo/?originalSubdomain=mg"
+        "source": "https://www.facebook.com/profile.php?id=61555702822896&_rdc=1&_rdr"
+    },
+    {
+        "name":"WhatsApp",
+        "imageSrc": "contact/whatsapp.png",
+        "numero": "038225555"
     }
   ]
   

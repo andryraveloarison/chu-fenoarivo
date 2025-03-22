@@ -5,7 +5,6 @@ import { gsap, Power3 } from "gsap";
 import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx"; // Import de la page About
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Service from "./pages/Service/Service.jsx";
 import ServicePage from "./pages/Service/Service.jsx";
 import ContactPage from "./pages/Contact/ContactPage.jsx";
 
@@ -29,11 +28,8 @@ function App() {
 
   return (
 <Router basename="/">
-<div className={styles.App}>
-
-
-        {/* Configuration des Routes */}
-        <Routes>
+  <div className={styles.App}>
+    <Routes>
         <Route
           path="/"
           element={

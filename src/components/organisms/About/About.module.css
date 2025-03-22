@@ -12,7 +12,7 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-align: center;
-  background-color: var(--color-red);
+  background-color: var(--color-dark);
   opacity: 1;
   padding: 8px 18px;
   border-radius: 12px;
@@ -59,7 +59,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 18vh;
-  background-color: var(--color-red);
+  background-color: var(--color-dark);
   margin: 50px;
   border-radius: 70px 0px 70px 0px; /* Haut gauche et bas droite */
 }
@@ -72,10 +72,12 @@
 }
 
 .aboutImage {
-  width: 40vw;
-  min-width: 250px;
+  width: 5vw;
+  min-width: 150px;
   max-width: 60vh;
-  padding: 20px;
+  padding: 9px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 .aboutItems {
@@ -153,10 +155,57 @@
   cursor: grab;
 }
 
+.directorImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+.directorItem {
+  border-radius: 15px; /* Coins arrondis pour un cadre plus classique */
+  text-align: center;
+  border-style: solid;
+  border-width: 6px; /* Bord plus large pour un effet de cadre épais */
+  border-color: #b28d55; /* Couleur dorée ou boisée typique des cadres anciens */
+  padding: 12px; /* Espacement interne pour donner de l'air autour du contenu */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre plus marquée pour l'effet de profondeur */
+  background-color: #f8f1e1; /* Couleur de fond beige ou crème pour simuler un cadre vintage */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition douce */
+  font-family: 'Georgia', serif; /* Police élégante pour un look plus classique */
+}
+
+.directorItem:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+}
+
+
+.directorInfo h3 {
+
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.directorInfo p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+@media screen and (max-width: 1090px) {
+  .directorImages {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 
 
 @media screen and (max-width: 830px) {
+
+  
+
 
   .title {
     font-size: 30px;
@@ -214,4 +263,7 @@
   }
 
 
+  
 }
+
+

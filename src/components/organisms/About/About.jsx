@@ -47,6 +47,18 @@ export const About = () => {
 
   })
 
+   // Data for the 8 Directors with their names, dates, and images
+   const directors = [
+    { name: "RAZAFINDRAKOTO Tôty", date: "1968 -  1969", imageUrl: "about/DE 1.jpg" },
+    { name: "RAZAFINTSALAMA Elisée", date: "", imageUrl: "about/DE 2.jpg" },
+    { name: "RAKOTONIAINA Patrice", date: "", imageUrl: "about/DE 3.jpg" },
+    { name: "RAHOELINA Brigitte", date: "1986 - 1991", imageUrl: "about/DE 4.jpg" },
+    { name: "RAZAKASOA Armand", date: "", imageUrl: "about/DE 5.jpg" },
+    { name: "RAKOTOSIHANAKA Fortuné", date: "1998 - 2010", imageUrl: "about/DE 6.jpg" },
+    { name: "RABARIJAONA Laurencia Marie Pauline", date: "2010 - 2024", imageUrl: "about/DE 7.jpg" },
+    { name: "RATSIMAMANGA Albert Sylla", date: "2024 - maintenant", imageUrl: "about/DE 8.jpg" },
+  ];
+
 
   return (
     <section className={styles.container} id="about">
@@ -103,13 +115,23 @@ Cordialement,
     </div>
 
     <div className={styles.contentHistory} ref={imageRef}>
-      
-      <img src={getImageUrl("about/chu.png")}
-          alt="Me sitting with a laptop"
-          className={styles.aboutImage}
-          style={{ pointerEvents: 'none' }} 
-          
-        />
+
+        <div className={styles.directorImages}>
+          {directors.map((director, index) => (
+            <div key={index} className={styles.directorItem}>
+              <img
+                src={getImageUrl(director.imageUrl)}
+                alt={director.name}
+                className={styles.aboutImage}
+                style={{ pointerEvents: "none" }}
+              />
+              <div className={styles.directorInfo}>
+                <h3>{director.name}</h3>
+                <p>{director.date}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       <div>
         <div className={styles.aboutItemsHistory}>
           <div className={styles.aboutItem}>

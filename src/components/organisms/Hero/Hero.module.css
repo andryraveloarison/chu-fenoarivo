@@ -89,7 +89,7 @@
   padding-bottom: 5px;
   background-image: linear-gradient(
     100deg,
-    #a31a08 100%,
+    #19376d 100%,
     rgba(255, 255, 255, 0) 90%
   );
   background-size: 0 100%;
@@ -100,13 +100,25 @@
 
 }
 
+
+.cardWithBackground:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
 .link:hover  {
   background-size: 100% 100%;
-
 }
 
 .image {
   width: 30px;
+  padding: 0.3rem;
+}
+
+.icon {
+  width: 60px;
   padding: 0.3rem;
 }
 
@@ -127,7 +139,8 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 
 }
 
@@ -150,13 +163,16 @@
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   gap: 40px;
   width: 80%;
-  border: var(--color-red);
-  border-width: 2px;
-  border-style: solid; 
+  border-width: 9px;
+  border-style: solid;
+  border-radius: 70px;
+  overflow: hidden; /* Empêche le débordement */
+  border-image: linear-gradient(135deg, #1485b9, #191654);
+  border-image-slice: 1;
 }
+
 
 
 .description {
@@ -281,6 +297,197 @@
 }
 
 
+.cardSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+
+
+.cardWithoutBackground {
+  background-color: transparent;
+  
+}
+
+
+.cardWithBackground p{
+  font-size: 1em;
+  color: rgb(216, 216, 216);
+}
+.cardWithoutBackground p {
+  font-size: 1em;
+  color: #333;
+}
+
+.cardSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+
+
+.cardWithBackground {
+  background-color: #f0f0f0;  /* Choisis la couleur de fond que tu préfères */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.cardWithBackground h3, .cardWithoutBackground h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+
+
+
+.cardSectionWithBackground {
+  background: linear-gradient(135deg, #1485b9, #191654);  
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.cardSectionWithoutBackground {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -7vh;
+}
+
+
+.cardWithBackground, .cardWithoutBackground {
+  border-radius: 30px;
+  width: 30%;
+  text-align: center;
+}
+
+.cardWithBackground {
+  background-color: #f0f0f0;  /* Choisis la couleur de fond que tu préfères */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+
+}
+
+.cardWithBackground {
+  box-shadow: 0 4px 8px rgba(26, 102, 11, 0.1); /* Ombre optionnelle pour la carte */
+  max-width: 250px;
+  max-height: 204px;
+  background-color: rgba(24, 23, 23, 0.774);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.textwhite {
+  color: white;
+}
+
+.cardWithoutBackground {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  border-radius: 8px;
+  width: 80vw;
+  height: 38vw;
+  max-height: 290px;
+  align-items: center;
+}
+
+.cardWithBackground h3, .cardWithoutBackground h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  border-radius: 8px 0 0 8px;
+
+}
+
+.cardWithoutBackground p {
+  font-size: 1em;
+  color: white;
+  background: linear-gradient(135deg, #d30896, #061669);
+  border-radius: 30px;
+  padding: 37px;
+  box-shadow: #333;
+}
+
+.cardptwo {
+  border-radius: 8px 0 0 8px !important;
+}
+
+.cardone,
+.cardtwo,
+.cardthree {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+  animation: slide 1s ease-in-out;
+
+}
+
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  height: 100%; /* Pour occuper toute la hauteur du parent */
+  align-items: center;
+
+} 
+
+.cardContentTwo{
+  display: flex;
+  flex-direction: row;
+  height: 100%; /* Pour occuper toute la hauteur du parent */
+}
+
+.cardContent h3, .cardContentTwo h3 {
+  flex: 1.7; /* 70% de l'espace */
+  margin: 0;
+  display: flex;
+  padding: 80px;
+  background-image: url('/assets/hero/bg2.png');
+
+}
+
+.titleCategorie{
+  position: absolute;
+  color: black;
+  background-color: white;
+  z-index: 2325;
+  margin-top: -160px;
+  margin-left: -93px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 8px rgb(24 24 24 / 42%);
+}
+.cardtwo {
+  justify-content: end;
+  flex-direction: row;
+  border-radius: 0 8px 8px 0 !important;
+
+}
+
+.cardContent p, .cardContentTwo p {
+  flex: 1.2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 45px;
+  min-width: 309px;
+  max-width: 648px;
+  min-height: 224px;
+  box-shadow: -10px 4px 20px rgba(10, 10, 10, 0.836);
+}
+
+
 
 @media screen and (max-width: 1220px) {
   .container {
@@ -326,5 +533,94 @@
 
   .links {
     justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .cardSectionWithBackground{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardWithBackground{
+    width: 100%;
+
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+.cardContent{
+  flex-direction: column;
+}
+
+.cardContentTwo{
+  flex-direction: column-reverse;
+}
+
+.cardWithoutBackground p, .cardptwo {
+  border-radius: 0 0 8px 8px !important;
+  min-height:0px ;
+  padding: 8px;
+}
+
+.titleCategorie {
+
+  position: absolute;
+    color: black;
+    background-color: white;
+    z-index: 2325;
+    margin-top: -149px;
+    margin-left: -2px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 8px rgb(24 24 24 / 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardone,
+.cardtwo,
+.cardthree {
+   border-radius:  8px 8px 0 0!important;
+   justify-content: start;
+   padding: 10px !important;
+
+}
+
+.cardWithoutBackground {
+
+  min-height: 290px;}
+
+}
+
+
+
+
+
+@media screen and (max-width: 540px) {
+
+.cardSectionWithBackground {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+}
+
+
+
+@keyframes slide {
+  0% {
+    opacity: 0.5;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
