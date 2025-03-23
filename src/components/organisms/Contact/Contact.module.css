@@ -78,6 +78,7 @@ button:hover {
     margin: 20vh auto;
 
     flex-direction: column;
+    gap: 20px;
   }
 
   .contact {

@@ -55,7 +55,7 @@ export const Hero = () => {
       setStats((prev) => ({
         anneesExistence: Math.min(count, 122), // Max 122 ans
         nbEmployes: Math.min(count * 5, 95 - (95 % 5)), // Ajuste pour ne pas dépasser 95
-        nbLits: Math.min(count * 3, 100 - (100 % 3)), // Ajuste pour ne pas dépasser 100
+        nbLits: Math.min(count * 3, 100 - (100 % 3))+1, // Ajuste pour ne pas dépasser 100
       }));
 
       if (count >= 122) clearInterval(interval);

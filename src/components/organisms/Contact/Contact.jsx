@@ -33,7 +33,7 @@ export const Contact = () => {
     setStatus("Envoi en cours...");
 
     const templateParams = {
-      from_name: formData.name,
+      name: formData.name,
       subject: formData.subject, // Objet saisi par l'utilisateur
       message: `De: ${formData.name} (${formData.email})\n\n${formData.message}`,
       reply_to: formData.email, // Permet au destinataire de répondre
@@ -41,10 +41,10 @@ export const Contact = () => {
 
     try {
       await emailjs.send(
-        "service_durh03v", // Remplace par ton Service ID EmailJS
-        "template_vr7yppv", // Remplace par ton Template ID EmailJS
+        "service_u93qk3s", // Remplace par ton Service ID EmailJS
+        "template_ans69df", // Remplace par ton Template ID EmailJS
         templateParams,
-        "u5qDuo7dWQb1qhEe9" // Remplace par ta Public Key EmailJS
+        "1LUIRDf2mKca5H3eq" // Remplace par ta Public Key EmailJS
       );
 
       setStatus("Message envoyé avec succès !");

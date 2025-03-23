@@ -69,7 +69,8 @@
   font-size: calc(1rem + 2vw); /* Utilisation de vw pour ajuster la taille du texte en fonction de la largeur de la fenêtre */
   font-weight: 900;
   font-family: var(--font-roboto);
-  background: linear-gradient(92.72deg, rgb(40,241,254) 0%, #765eed 100%);
+  background: linear-gradient(135deg, #f1b592, #351506);
+
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin-bottom: 1rem;
@@ -169,7 +170,7 @@
   border-style: solid;
   border-radius: 70px;
   overflow: hidden; /* Empêche le débordement */
-  border-image: linear-gradient(135deg, #1485b9, #191654);
+  border-image: linear-gradient(135deg, #f1b592, #351506);
   border-image-slice: 1;
 }
 
@@ -346,7 +347,7 @@
 
 
 .cardSectionWithBackground {
-  background: linear-gradient(135deg, #1485b9, #191654);  
+  background: linear-gradient(135deg, #f1b592, #351506);
   padding: 60px;
   display: flex;
   justify-content: center;
@@ -461,7 +462,6 @@
   position: absolute;
   color: black;
   background-color: white;
-  z-index: 2325;
   margin-top: -160px;
   margin-left: -93px;
   padding: 10px;
