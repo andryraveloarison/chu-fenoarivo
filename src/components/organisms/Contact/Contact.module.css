@@ -20,6 +20,7 @@
 .mapContainer {
   width: 40vw;
   height: 400px;
+  z-index: 0;
 }
 
 .map {

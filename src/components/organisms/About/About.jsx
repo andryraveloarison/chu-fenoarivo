@@ -55,8 +55,8 @@ export const About = () => {
     { name: "RAHOELINA Brigitte", date: "1986 - 1991", imageUrl: "about/DE 4.jpg" },
     { name: "RAZAKASOA Armand", date: "", imageUrl: "about/DE 5.jpg" },
     { name: "RAKOTOSIHANAKA Fortuné", date: "1998 - 2010", imageUrl: "about/DE 6.jpg" },
-    { name: "RABARIJAONA Laurencia Marie Pauline", date: "2010 - 2024", imageUrl: "about/DE 7.jpg" },
-    { name: "RATSIMAMANGA Albert Sylla", date: "2024 - maintenant", imageUrl: "about/DE 8.jpg" },
+    { name: "RABARIJAONA Laurencia Marie Pauline", date: "2010 - 2023", imageUrl: "about/DE 7.jpg" },
+    { name: "RATSIMAMANGA Albert Sylla", date: "2023 - maintenant", imageUrl: "about/DE 8.jpg" },
   ];
 
 

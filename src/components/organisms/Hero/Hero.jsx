@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef, useState, useEffect} from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../../utils";
@@ -6,25 +7,60 @@ import { Link } from "react-router-dom";
 import { animateHero } from "../../../animations";
 
 const images = {
+
+  
   cardone: [
-    getImageUrl("hero/bg1.jpg"),
-    getImageUrl("hero/bg3.jpg"),
-    getImageUrl("hero/bg2.png"),
+    getImageUrl("hero/cardone/img1.JPG"),
+    getImageUrl("hero/cardone/img2.JPG"),
+    getImageUrl("hero/cardone/img3.JPG"),
+    getImageUrl("hero/cardone/img4.JPG"),
+
   ],
   cardtwo: [
-    getImageUrl("hero/bg1.jpg"),
-    getImageUrl("hero/bg3.jpg"),
-    getImageUrl("hero/bg2.png"),
+    getImageUrl("hero/cardtwo/img1.JPG"),
+    getImageUrl("hero/cardtwo/img2.JPG"),
+    getImageUrl("hero/cardtwo/img3.JPG"),
+    getImageUrl("hero/cardtwo/img4.JPG"),
   ],
   cardthree: [
-    getImageUrl("hero/bg1.jpg"),
-    getImageUrl("hero/bg3.jpg"),
-    getImageUrl("hero/bg2.png"),
+    getImageUrl("hero/cardthree/img1.JPG"),
+    getImageUrl("hero/cardthree/img3.JPG"),
+    getImageUrl("hero/cardthree/img2.JPG"),
+    getImageUrl("hero/cardthree/img4.JPG"),
+
   ],
 };
 
 
 export const Hero = () => {
+
+  const motionValue = useMotionValue(0);
+  const [exist, setExist] = useState(0)
+
+  const rounded = useTransform(motionValue, (latest) => Math.round(latest));
+
+
+  const [stats, setStats] = useState({
+    anneesExistence: 0,
+    nbEmployes: 0,
+    nbLits: 0,
+  });
+
+  const startAnimation = () => {
+    let count = 0;
+
+    const interval = setInterval(() => {
+      count++;
+
+      setStats((prev) => ({
+        anneesExistence: Math.min(count, 122), // Max 122 ans
+        nbEmployes: Math.min(count * 5, 95 - (95 % 5)), // Ajuste pour ne pas dépasser 95
+        nbLits: Math.min(count * 3, 100 - (100 % 3)), // Ajuste pour ne pas dépasser 100
+      }));
+
+      if (count >= 122) clearInterval(interval);
+    },20); // Vitesse d'incrémentation
+  };
 
   const [bgImages, setBgImages] = useState({
     cardone: images.cardone[0],
@@ -126,26 +162,29 @@ export const Hero = () => {
         <div className={styles.cardWithBackground}>
           
         {<img src={getImageUrl("hero/hopitaly.png")} alt="play icon" className={styles.icon}/>}
-        <motion.p>
-          <AnimatedNumber to={122} /> ans d’existence
+        <motion.p
+          onViewportEnter={startAnimation} // Déclenche l'animation quand visible
+        >
+        {stats.anneesExistence} ans d’existence
         </motion.p>
 
         </div>
         <div className={styles.cardWithBackground}>
         {<img src={getImageUrl("hero/employe.png")} alt="play icon" className={styles.icon}/>}
         <motion.p>
-          <AnimatedNumber to={95} /> employés 
+           {stats.nbEmployes} employés 
         </motion.p>
         </div>
         <div className={styles.cardWithBackground}>
         {<img src={getImageUrl("hero/lit.png")} alt="play icon" className={styles.icon}/>}
         <motion.p>
-        Une capacité d'accueil de <AnimatedNumber to={100} /> lits
+        Une capacité d'accueil de  {stats.nbLits} lits
         </motion.p>
 
         </div>
       </div>
 
+    
       <div className={styles.bgTitle}>
           <h2 className={styles.title}> Catégories de chambres d'hospitalisation </h2>
         </div>
@@ -208,9 +247,6 @@ export const Hero = () => {
 };
 
 
-
-
-import { motion } from "framer-motion";
 
 const AnimatedNumber = ({ to }) => {
   const [count, setCount] = useState(0);

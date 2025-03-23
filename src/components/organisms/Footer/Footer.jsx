@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           <div className={styles.bottom}>
-            <p>Fait avec ❤️ par Ditek</p>
+            <p>Fait avec 🤍 par Ditek</p>
             <br />
             <p>© {new Date().getFullYear()} Chu fenoarivo</p>
           </div>
