@@ -155,7 +155,7 @@ export const Hero = () => {
 
       {/* Cards with background section */}
       <div className={styles.bgTitle}>
-          <h2 className={styles.title}> CHU Fenoarivo c’est </h2>
+          <h2 className={styles.title}> CHU Fenoarivo </h2>
         </div>
 
       <div className={styles.cardSectionWithBackground}>
