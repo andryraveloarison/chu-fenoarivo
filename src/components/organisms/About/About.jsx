@@ -89,6 +89,7 @@ export const About = () => {
               </motion.div>
 
                 <p>
+                <p>
                   Chers visiteurs,
                   <br></br><br></br>
                   C'est avec un immense plaisir que je vous souhaite la bienvenue sur le site web du Centre Hospitalier Universitaire (CHU) Fenoarivo, Madagascar.
@@ -104,6 +105,10 @@ export const About = () => {
                   Sur ce site, vous trouveriez des informations sur nos services, notre équipe, ainsi que des ressources utiles pour vous accompagner dans votre parcours de soins et lors d’éventuelle hospitalisation de vos proches. Nous espérons que ce site facilite vos démarches et vous permette de mieux connaître notre Etablissement.
                   <br></br><br></br>
                   Nous vous remercions de votre intérêt pour notre CHU. Nous sommes à votre disposition et accueillons vos propositions et remarques avec grand plaisir. Ensemble, nous pouvons bâtir un avenir meilleur pour la santé de notre communauté.
+                  <br></br><br></br>
+                  Cordialement.
+                </p>
+
                 </p>
                 <br></br>
                 <div className={styles.nameDe}>
