@@ -85,21 +85,25 @@ export const About = () => {
                       
               >
 
-                <h1 className={styles.title}>Mots du Directeur d'Etablissement du CHU Fenoarivo</h1><br></br>
+                <h1 className={styles.title}>Mots du Directeur </h1><br></br>
               </motion.div>
 
                 <p>
-Chers visiteurs,<br></br><br></br>
-C'est avec un immense plaisir que je vous souhaite la bienvenue sur le site web du Centre Hospitalier Universitaire (CHU) Fenoarivo, Madagascar. <br></br><br></br>
-Aujourd'hui, nous faisons un pas important vers l'avenir en lançant notre plateforme en ligne, un espace dédié à l'information, à l'échange et à la transparence.<br></br>
-Le CHU Fenoarivo, situé dans la partie ouest d’Antananarivo, le Capital de Madagascar est l’un des 22 CHU dans tout Madagascar. Il est spécialisé dans le domaine de la pneumologie et la phtisiologie. Il s'engage à offrir des soins de qualité, centrés sur les patients « izay marary andrianina ». <br></br><br></br>
-Notre slogan, « ny anio mandresy ny omaly » traduit librement "Aujourd'hui meilleur qu'hier", reflète notre détermination à améliorer continuellement nos services et à humaniser chaque aspect de notre prise en charge. <br></br>
-Nous croyons fermement que chaque patient mérite une attention particulière et un accueil chaleureux, et nous sommes dans la voie de tout mettre en œuvre pour que cela soit une réalité.<br></br>
-Sur ce site, vous trouverez des informations sur nos services, nos équipes, ainsi que des ressources utiles pour vous accompagner dans votre parcours de soins et lors d’éventuelle hospitalisation de vos proches. Nous espérons que cet outil facilitera vos démarches et vous permettra de mieux connaître notre Etablissement.<br></br><br></br>
-Nous vous remercions de votre intérêt pour notre CHU. Nous sommes à votre disposition et accueillons vos propositions et remarques avec grand plaisir. Ensemble, nous pouvons bâtir un avenir meilleur pour la santé de notre communauté.<br></br>
-<br></br>
-Cordialement,
-
+                  Chers visiteurs,
+                  <br></br><br></br>
+                  C'est avec un immense plaisir que je vous souhaite la bienvenue sur le site web du Centre Hospitalier Universitaire (CHU) Fenoarivo, Madagascar.
+                  <br></br><br></br>
+                  Aujourd'hui, nous faisons un pas important vers l'avenir en lançant notre plateforme en ligne, un espace dédié à l'information, à l'échange et à la transparence.
+                  <br></br><br></br>
+                  Le CHU Fenoarivo, situé dans la partie ouest d’Antananarivo, Capital de Madagascar est l’un des 22 CHU de l’île. Il est spécialisé dans les domaines de la pneumologie et la phtisiologie (pôle pulmonaire). Il s’engage à offrir des soins de qualité suivant les normes internationales en adoptant l’humanisation des soins, « izay marary andrianina ».
+                  <br></br><br></br>
+                  Notre slogan, « ny anio mandresy ny omaly » traduit librement par "Aujourd'hui meilleur qu'hier", reflète notre détermination à améliorer continuellement nos services et à humaniser chaque aspect de notre prise en charge.
+                  <br></br><br></br>
+                  Nous croyons fermement que chaque patient mérite une attention particulière et un accueil chaleureux, et nous sommes dans la voie de tout mettre en œuvre pour que cela devienne une réalité.
+                  <br></br><br></br>
+                  Sur ce site, vous trouveriez des informations sur nos services, notre équipe, ainsi que des ressources utiles pour vous accompagner dans votre parcours de soins et lors d’éventuelle hospitalisation de vos proches. Nous espérons que ce site facilite vos démarches et vous permette de mieux connaître notre Etablissement.
+                  <br></br><br></br>
+                  Nous vous remercions de votre intérêt pour notre CHU. Nous sommes à votre disposition et accueillons vos propositions et remarques avec grand plaisir. Ensemble, nous pouvons bâtir un avenir meilleur pour la santé de notre communauté.
                 </p>
                 <br></br>
                 <div className={styles.nameDe}>

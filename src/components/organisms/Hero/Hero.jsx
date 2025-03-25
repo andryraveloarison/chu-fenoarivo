@@ -10,22 +10,22 @@ const images = {
 
   
   cardone: [
-    getImageUrl("hero/cardone/img1.JPG"),
-    getImageUrl("hero/cardone/img2.JPG"),
-    getImageUrl("hero/cardone/img3.JPG"),
-    getImageUrl("hero/cardone/img4.JPG"),
+    getImageUrl("hero/cardone/img1.jpeg"),
+    getImageUrl("hero/cardone/img2.jpeg"),
+    getImageUrl("hero/cardone/img3.jpeg"),
+    getImageUrl("hero/cardone/img4.jpeg"),
 
   ],
   cardtwo: [
     getImageUrl("hero/cardtwo/img1.JPG"),
-    getImageUrl("hero/cardtwo/img2.JPG"),
-    getImageUrl("hero/cardtwo/img3.JPG"),
-    getImageUrl("hero/cardtwo/img4.JPG"),
+    getImageUrl("hero/cardtwo/img2.jpeg"),
+    getImageUrl("hero/cardtwo/img3.jpeg"),
+    getImageUrl("hero/cardtwo/img4.jpeg"),
   ],
   cardthree: [
-    getImageUrl("hero/cardthree/img1.JPG"),
-    getImageUrl("hero/cardthree/img3.JPG"),
-    getImageUrl("hero/cardthree/img2.JPG"),
+    getImageUrl("hero/cardthree/img1.jpeg"),
+    getImageUrl("hero/cardthree/img3.jpeg"),
+    getImageUrl("hero/cardthree/img2.jpeg"),
     getImageUrl("hero/cardthree/img4.JPG"),
 
   ],
@@ -136,19 +136,21 @@ export const Hero = () => {
         </div>
         <div className={styles.aboutItems}>
           <p className={styles.intro}>
-            Situé à 13 km d’Antananarivo sur la route nationale n°1 reliant Antananarivo –Tsiroanomandidy, le Centre Hospitalier Universitaire Fenoarivo est situé à 18.93° de latitude sud et à 47.42° de longitude est.  
-            <br></br><br></br>
-            Le CHU Fenoarivo est un Etablissement Publique National à Caractère Administratif, parmi les 22 CHU de Madagascar et les 12 d’Antananarivo  
-            <br></br><br></br>
-            Il dessert une fraction de la population de la Région d’Analamanga et une majeure partie des régions limitrophes à l’ouest d’Antananarivo, surtout dans le domaine de la Pneumo-phtisiologie. 
-            <br></br><br></br>
-            Outre les activités inhérentes à son existence, à laquelle l’hôpital a été toujours connu (ex-sanatorium), le Centre Hospitalier est devenu un centre de soins diversifiés et spécialisés, et également un centre de formation pour le personnel de santé (médical et paramédical), et même pour le personnel administratif exerçant dans le domaine de la santé.
-            <br></br><br></br> 
-            C’est un centre de consultation et d’hospitalisation de référence de troisième niveau et offrant des services dans divers domaines, tels que la pneumo-phtisiologie, la cardiologie et la médecine général. Il inclut le Centre de Référence de Prise en Charge de la TuBerculose Multi-Résistante (CRPC TBMR).
-            <br></br><br></br> 
-            Il propose des explorations médicales, telles que le radiodiagnostic, les analyses biologiques, les explorations fonctionnelles respiratoires, la fibroscopie bronchique, l’échographie / doppler et l’électrocardiographie.
-            <br></br><br></br> 
-            Il dispose également d'une Pharmacie, d’un Service d’Accueil-Triage-Orientation  (ATO) ainsi que des Services d’Urgence et de Réanimation.     
+          Le CHU Fenoarivo se trouve au point kilométrique 13 de la route nationale n°1, qui relie Antananarivo à Tsiroanomandidy, à une latitude de 18,93° Sud et une longitude de 47,42° Est. 
+          <br></br><br></br>
+          C'est un Etablissement Public National à caractère Administratif de Madagascar.
+          <br></br><br></br>
+          Il dessert une partie de la population de la région d'Analamanga ainsi qu'une grande majorité des régions limitrophes à l'ouest d'Antananarivo, notamment dans le domaine de la pneumo-phtisiologie et certains patients proviennent même d'autres provinces.
+          <br></br><br></br>
+          En tant que Centre Universitaire, il assure la formation pratique des étudiants en médecine et des paramédicaux, ainsi que les administratifs se spécialisant dans le secteur de la santé ; 
+          <br></br><br></br>
+          Et en tant que Centre Hospitalier, l'ex-Sanatorium est devenu un centre de référence de troisième niveau, spécialisé dans le domaine de la pneumo-phtisiologie (pôle pulmonaire). Il abrite également le Centre de Référence pour la Prise en Charge de la TuBerculose Multi-Résistante (CRPC TBMR). 
+          <br></br><br></br>
+          En plus de cette spécialité, les consultations externes et les hospitalisations dans les domaines de la cardiologie et la médecine générale sont prises en charge également (sans chirurgie).
+          <br></br><br></br>
+          Le Centre propose diverses explorations médicales et activités paracliniques telles que le radiodiagnostic, les analyses biologiques, les explorations fonctionnelles respiratoires, la fibroscopie bronchique, l'échographie/doppler et l'électrocardiographie.
+          <br></br><br></br>
+Il dispose également d'une pharmacie, d'un Service d'Accueil-Triage-Orientation (ATO) ainsi que des Services d'urgence et de réanimation.
           </p>
         </div>
       </div>
