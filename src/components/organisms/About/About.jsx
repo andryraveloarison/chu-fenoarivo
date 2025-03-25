@@ -106,7 +106,7 @@ export const About = () => {
                   <br></br><br></br>
                   Nous vous remercions de votre intérêt pour notre CHU. Nous sommes à votre disposition et accueillons vos propositions et remarques avec grand plaisir. Ensemble, nous pouvons bâtir un avenir meilleur pour la santé de notre communauté.
                   <br></br><br></br>
-                  Cordialement.
+                  Cordialement,
                 </p>
 
                 </p>
