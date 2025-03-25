@@ -11,9 +11,9 @@ const images = {
   
   cardone: [
     getImageUrl("hero/cardone/img1.jpeg"),
-    getImageUrl("hero/cardone/img2.jpeg"),
-    getImageUrl("hero/cardone/img3.jpeg"),
-    getImageUrl("hero/cardone/img4.jpeg"),
+    getImageUrl("hero/cardone/img5.jpeg"),
+    getImageUrl("hero/cardone/img6.jpeg"),
+    getImageUrl("hero/cardone/img7.jpeg"),
 
   ],
   cardtwo: [
@@ -26,7 +26,7 @@ const images = {
     getImageUrl("hero/cardthree/img1.jpeg"),
     getImageUrl("hero/cardthree/img3.jpeg"),
     getImageUrl("hero/cardthree/img2.jpeg"),
-    getImageUrl("hero/cardthree/img4.JPG"),
+    getImageUrl("hero/cardthree/img4.jpeg"),
 
   ],
 };

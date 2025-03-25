@@ -127,6 +127,8 @@
 .aboutItem h1 {
   font-size: 2.5vw;    
   text-align: center;  
+  margin-left: -20px;
+
 }
 
 .aboutItem p {
@@ -240,8 +242,8 @@
 
   .aboutItem h1 {
     font-size: 30px;
-    text-align: center;
     width: 100%;
+
   }
 
   .aboutItems {
