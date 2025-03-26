@@ -118,7 +118,7 @@ export const Hero = () => {
       <section className={styles.container}>
         <div className={styles.content}>
           <p className={styles.description} ref={descriptionRef}>
-            <span className={styles.job}>" Ny anio mandresy ny omaly "</span> 
+            <span className={styles.job} translate="no">" Ny anio mandresy ny omaly "</span> 
           </p>
 
           <li className={styles.link}>
