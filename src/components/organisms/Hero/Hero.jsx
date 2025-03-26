@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef, useState, useEffect} from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
 import styles from "./Hero.module.css";
-import { getImageUrl } from "../../../utils";
+import { getImageUrl, NoTranslate } from "../../../utils";
 import { Link } from "react-router-dom";
 import { animateHero } from "../../../animations";
 
@@ -31,9 +31,7 @@ const images = {
   ],
 };
 
-const NoTranslate = ({ children }) => {
-  return <span translate="no">{children}</span>;
-};
+
 
 
 
@@ -184,13 +182,20 @@ Il dispose également d'une pharmacie, d'un Service d'Accueil-Triage-Orientation
         <div className={styles.cardWithBackground}>
         {<img src={getImageUrl("hero/employe.png")} alt="play icon" className={styles.icon}/>}
         <motion.p>
+        
+            <NoTranslate>
            {stats.nbEmployes} employés 
+           </NoTranslate>
+
         </motion.p>
         </div>
         <div className={styles.cardWithBackground}>
         {<img src={getImageUrl("hero/lit.png")} alt="play icon" className={styles.icon}/>}
         <motion.p>
-        Une capacité d'accueil de  {stats.nbLits} lits
+          <NoTranslate>
+            Une capacité d'accueil de  {stats.nbLits} lits
+          </NoTranslate>
+
         </motion.p>
 
         </div>

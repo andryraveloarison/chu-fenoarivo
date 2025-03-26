@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
-import { getImageUrl } from "../../../utils";
+import { getImageUrl, NoTranslate } from "../../../utils";
 import contacts from "../../../data/contacts.json";
 
 const Footer = () => {
@@ -34,7 +34,12 @@ const Footer = () => {
               className={styles.heroImg}
             />
             <div className={styles.contact}>
-              <p>" Ny anio mandresy ny omaly "</p>
+              
+              <p>
+                <NoTranslate>
+                  " Ny anio mandresy ny omaly "
+                </NoTranslate>
+              </p>
             </div>
           </div>
           {/* Infos de contact */}
