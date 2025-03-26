@@ -123,8 +123,10 @@ export const Hero = () => {
           <p className={styles.description} ref={descriptionRef}>
             <span className={styles.job} >
             <NoTranslate>" Ny anio mandresy ny omaly "</NoTranslate>
-
-      </span> 
+           </span> 
+           <span className={styles.devise}>
+                  (Aujourd'hui meilleur qu'hier)
+           </span>
           </p>
 
           <li className={styles.link}>
@@ -171,10 +173,9 @@ Il dispose également d'une pharmacie, d'un Service d'Accueil-Triage-Orientation
           
         {<img src={getImageUrl("hero/hopitaly.png")} alt="play icon" className={styles.icon}/>}
         <motion.p
-          onViewportEnter={startAnimation} // Déclenche l'animation quand visible
         >
           <NoTranslate>
-          {stats.anneesExistence} ans d’existence
+          122 ans d’existence
           </NoTranslate>
         </motion.p>
 
@@ -183,19 +184,14 @@ Il dispose également d'une pharmacie, d'un Service d'Accueil-Triage-Orientation
         {<img src={getImageUrl("hero/employe.png")} alt="play icon" className={styles.icon}/>}
         <motion.p>
         
-            <NoTranslate>
-           {stats.nbEmployes} employés 
-           </NoTranslate>
+           95 employés 
 
         </motion.p>
         </div>
         <div className={styles.cardWithBackground}>
         {<img src={getImageUrl("hero/lit.png")} alt="play icon" className={styles.icon}/>}
         <motion.p>
-          <NoTranslate>
-            Une capacité d'accueil de  {stats.nbLits} lits
-          </NoTranslate>
-
+            Une capacité d'accueil de  100 lits
         </motion.p>
 
         </div>
