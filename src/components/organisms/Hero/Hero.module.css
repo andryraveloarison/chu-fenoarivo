@@ -516,6 +516,10 @@
     padding-top: 14vh;
   }
 
+  .devise {
+    font-size: 15px;
+  }
+
   .content {
     align-items: center;
     margin-bottom: 5vh;
