@@ -16,7 +16,7 @@
     {
 
       "title": "Urgence-Réanimation",
-      "phone": "+261 34 14 200 53",
+      "phone": "+261 34 14 200 55",
       "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 53<br></br>Horaire: ouvert 24h/24 et 7j/7<br></br><b>CAPACITÉ</b><br></br>Salle 1: 08 lits<br></br>Salle 2: 04 lits (pour les accidentés)<br></br><b>OFFRES DE SERVICE</b><br></br>Consultation d'urgence et hospitalisation<br></br>Consultation Accidenté<br></br>Réanimation<br></br>Echographie<br></br>",
       "image":"services/Urgence réanimation.jpg"  
     },
@@ -29,7 +29,7 @@
     },
     {
 
-      "title": "Médecine générale",
+      "title": "Médecine générale salle payante",
       "phone": "+261 34 14 200 55",
       "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 55<br></br>Horaire de consultation: 08h30 - 15H30 (Flexible en fonction du nombre de patients présents sur place)<br></br><b>CAPACITÉ</b><br></br>Pavillon médecine générale 1: 28 lits<br></br>Pavillon médecine générale 2: 14 lits<br></br><b>OFFRES DE SERVICE</b><br></br>Consultation externe<br></br>Visite hospitalière<br></br>Traitement de l'hémorragie digestive<br></br>Traitement de la fièvre typhoïde<br></br>Traitement du paludisme<br></br>Traitement de la gastro-entérite<br></br>Soins et visites paramédicales<br></br>",
       "image":"services/medecinege.jpg"  
@@ -46,7 +46,7 @@
     {
 
       "title": "Imagerie",
-      "phone": "+261 34 14 193 25 / 034 14 200 46",
+      "phone": "+261 34 14 200 46",
       "description": "<b>ACCUEIL</b> <br></br>Contact: 034 14 200 52<br></br>Horaire d’ouverture: 08h30 - 15h30, 5j/7<br></br><b>CAPACITÉ DE CONSULTATION QUOTIDIENNE</b><br></br>Echographie: 24 consultations<br></br>Radiographie: 32 consultations<br></br><b>OFFRES DE SERVICE</b><br></br>Echographie (grossesse, pelvienne, abdominale, thoracique, cervicale, ophtalmologique, partie molle)<br></br>Echocardiographie DOPPLER<br></br>Echo DOPPLER de vaisseaux<br></br>Radiographie (coeur - poumon, os, crâne, abdomen sans préparation)<br></br>",
       "image":"services/Imagerie.jpg" 
  
