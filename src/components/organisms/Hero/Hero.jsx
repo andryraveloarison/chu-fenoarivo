@@ -31,6 +31,11 @@ const images = {
   ],
 };
 
+const NoTranslate = ({ children }) => {
+  return <span translate="no">{children}</span>;
+};
+
+
 
 export const Hero = () => {
 
@@ -118,7 +123,10 @@ export const Hero = () => {
       <section className={styles.container}>
         <div className={styles.content}>
           <p className={styles.description} ref={descriptionRef}>
-            <span className={styles.job} translate="no">" Ny anio mandresy ny omaly "</span> 
+            <span className={styles.job} >
+            <NoTranslate>" Ny anio mandresy ny omaly "</NoTranslate>
+
+      </span> 
           </p>
 
           <li className={styles.link}>
