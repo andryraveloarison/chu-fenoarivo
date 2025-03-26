@@ -37,7 +37,7 @@ const Footer = () => {
               
               <p>
                 <NoTranslate>
-                  " Ny anio mandresy ny omaly !"
+                  " Ny anio mandresy ny omaly"
                 </NoTranslate>
               </p>
             </div>
