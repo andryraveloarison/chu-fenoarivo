@@ -546,6 +546,8 @@
   .description {
     font-size: calc(1rem + 1vw);
     display: flex;
+    margin-top: 43px;
+
   }
 
   .links {
