@@ -28,6 +28,8 @@ function App() {
 
   return (
 <Router basename="/">
+<div translate="no">
+
   <div className={styles.App}>
     <Routes>
         <Route
@@ -47,6 +49,8 @@ function App() {
 
         </Routes>
       </div>
+    </div>
+
     </Router>
   );
 }
