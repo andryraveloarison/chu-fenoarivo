@@ -235,7 +235,7 @@ Il dispose également d'une pharmacie, d'un Service d'Accueil-Triage-Orientation
               <div className={styles.titleCategorie}>              
               Salle payante
               </div>
-              1 dressing avec placard, 2 lits, dont 1 pour le patient et 1 pour le garde malade, 1 cuisine commune et 1 bloc sanitaire commun.
+              1 placard, 2 lits, dont 1 pour le patient et 1 pour le garde malade, 1 cuisine commune et 1 bloc sanitaire commun.
             </p>
           </div>
         </div>
