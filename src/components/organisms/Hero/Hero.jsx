@@ -175,7 +175,9 @@ Il dispose également d'une pharmacie, d'un Service d'Accueil-Triage-Orientation
         <motion.p
           onViewportEnter={startAnimation} // Déclenche l'animation quand visible
         >
-        {stats.anneesExistence} ans d’existence
+          <NoTranslate>
+          {stats.anneesExistence} ans d’existence
+          </NoTranslate>
         </motion.p>
 
         </div>
