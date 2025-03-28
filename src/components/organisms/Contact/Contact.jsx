@@ -111,7 +111,7 @@ export const Contact = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
           {/* Marqueur avec logo personnalisé */}
-          <Marker position={[-18.93, 47.42]} icon={customIcon}>
+          <Marker position={[-18.93656, 47.43470]} icon={customIcon}>
             <Popup>
               Nous sommes ici ! <br /> Venez nous rendre visite.
             </Popup>
