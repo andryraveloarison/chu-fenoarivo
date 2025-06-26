@@ -126,6 +126,20 @@
   margin-top: 10px;
 }
 
+
+
+.nobullet {
+  list-style: none;
+}
+
+.linkreset {
+  all: unset;
+  cursor: pointer;
+  text-decoration: underline;
+  color: inherit;
+}
+
+
 .closeBtn:hover {
   background-color: #3f0505;
 }

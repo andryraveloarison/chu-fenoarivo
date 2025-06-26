@@ -82,6 +82,18 @@ const Footer = () => {
           </div>
 
           <div className={styles.bottom}>
+            <p>Site du Ministère de la Santé Publique :</p>
+            <li className={styles.nobullet}>
+              <a
+                href="https://www.msanp.gov.mg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkreset}
+              >
+                https://www.msanp.gov.mg/
+              </a>
+            </li>
+            <br />
             <p>Fait avec 🤍 par Ditek</p>
             <br />
             <p>© {new Date().getFullYear()} Chu fenoarivo</p>
