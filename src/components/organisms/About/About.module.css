@@ -19,6 +19,18 @@
   border-radius: 12px;
 }
 
+.titleCard {
+  color: var(--color-dark);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-align: center;
+  background-color: var(--color-grey);
+  opacity: 1;
+  padding: 8px 18px;
+  border-radius: 12px;
+}
+
 .nameDe{
   text-align: end;
   width: 100%;

@@ -85,7 +85,7 @@ export const About = () => {
                       
               >
 
-                <h1 className={styles.title}>Mots du Directeur </h1><br></br>
+                <h1 className={styles.titleCard}>Mots du Directeur </h1><br></br>
               </motion.div>
 
                 <p>
