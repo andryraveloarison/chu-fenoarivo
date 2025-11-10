@@ -53,7 +53,7 @@ textarea {
 }
 
 button {
-  background-color: var(--color-dark);
+  background-color: var(--color-dark-grey);
   color: white;
   border: none;
   padding: 10px;

@@ -23,7 +23,7 @@ export const Navbar = () => {
     <nav className={`${styles.navbar} ${isHome && isScrolled ? styles.scrolled : !isHome? styles.scrolled : ""}`}>
       <a className={styles.title} href="/">
         <img src={getImageUrl("nav/rep.jpg")} alt="republique logo" className={styles.heroImg} />
-        <img src={getImageUrl("nav/ministera.png")} alt="ministere logo" className={styles.heroImg} />
+        <img src={getImageUrl("nav/ministera2.png")} alt="ministere logo" className={styles.heroImg} />
         <img src={getImageUrl("nav/dgfs.png")} alt="dgfs logo" className={styles.heroImg} />
         <img src={getImageUrl("nav/chu.png")} alt="chu fenoarivo logo" className={styles.heroImg} />  
       </a>

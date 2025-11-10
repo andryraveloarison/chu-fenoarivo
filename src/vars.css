@@ -3,11 +3,15 @@
   --color-text: #fff;
   --color-primary: #576cbc;
   --color-secondary: #19376d;
-  --color-dark: #5e2911;
+  --color-dark: #1a1817;
   --color-bg: #fff;
   --color-blue: #1485b9;
   --color-green: #194101;
-  --color-red:#b92e1c;
+  --color-grey: #c5c5c5;
+  --color-dark-grey: rgb(99 98 98);
+  --color-grey-degrade: linear-gradient(135deg, #b5b5b5, #292827);
+  --color-green-degrade:linear-gradient(135deg, #27e30b, #033705);
+  --color-red:#c20707;
   --color-footer-bg: #045885; /* Bleu foncé */
   --color-gradien: linear-gradient(135deg, #1485b9, #191654);
 

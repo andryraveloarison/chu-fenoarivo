@@ -170,7 +170,7 @@
   border-style: solid;
   border-radius: 70px;
   overflow: hidden; /* Empêche le débordement */
-  border-image: linear-gradient(135deg, #f1b592, #351506);
+  border-image: var(--color-grey-degrade);
   border-image-slice: 1;
 }
 
@@ -356,10 +356,8 @@
 }
 
 
-
-
 .cardSectionWithBackground {
-  background: linear-gradient(135deg, #f1b592, #351506);
+  background: var(--color-grey-degrade);
   padding: 60px;
   display: flex;
   justify-content: center;
@@ -425,7 +423,7 @@
 .cardWithoutBackground p {
   font-size: 1em;
   color: white;
-  background: linear-gradient(135deg, #d30896, #061669);
+  background: var(--color-green-degrade);
   border-radius: 30px;
   padding: 37px;
   box-shadow: #333;

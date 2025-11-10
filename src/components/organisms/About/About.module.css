@@ -7,12 +7,13 @@
 }
 
 .title {
-  color: rgb(255, 255, 255);
+  color: var(--color-dark);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
   text-align: center;
-  background-color: var(--color-dark);
+  border: 2px solid #222;
+  background-color: var(--color-grey);
   opacity: 1;
   padding: 8px 18px;
   border-radius: 12px;
@@ -59,7 +60,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 18vh;
-  background-color: var(--color-dark);
+  background-color: var(--color-grey);
   margin: 50px;
   border-radius: 70px 0px 70px 0px; /* Haut gauche et bas droite */
 }
@@ -115,6 +116,7 @@
   list-style: none;
   padding: 25px;
   gap: 10px;
+  color: black;
 }
 
 
@@ -169,7 +171,7 @@
   text-align: center;
   border-style: solid;
   border-width: 6px; /* Bord plus large pour un effet de cadre épais */
-  border-color: #b28d55; /* Couleur dorée ou boisée typique des cadres anciens */
+  border-color: var(--color-red); /* Couleur dorée ou boisée typique des cadres anciens */
   padding: 12px; /* Espacement interne pour donner de l'air autour du contenu */
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre plus marquée pour l'effet de profondeur */
   background-color: #f8f1e1; /* Couleur de fond beige ou crème pour simuler un cadre vintage */

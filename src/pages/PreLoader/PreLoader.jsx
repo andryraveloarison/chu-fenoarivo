@@ -7,7 +7,7 @@ const PreLoader = () => {
   const creatRef = useRef(null);
   const passRef = useRef(null);
   const fenoRef = useRef(null)
-
+ 
   useEffect(() => {
     animatePreloader(devRef,creatRef,passRef, fenoRef)
   }, []);
